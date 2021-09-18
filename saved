@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Dream Home</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+
+<body>
+  <!-- navigation -->
+  <header>
+    <h1> <a href="/">Dream Home</a> </h1>
+    <nav>
+      <!-- Unordered list element--> 
+       <ul> 
+         <!-- List item element-->
+         <li> <a href="./index.html#home">Home</a> </li>
+         <li> <a href="./index.html#reach-out">Contact Us</a> </li>
+         <li>  <a class="open-button" onclick="openForm()">Login / Sign Up</a>    </li>
+ <!--       <li>  <a href="./index.html#Login">Login / Sign Up</a> </li>   -->
+          
+       </ul>    
+    </nav>
+  </header>
+
+<!------------------------------------------------------------------------------->
+ 
+ <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="login-form">
+     
+      <h1>Login</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn">Login</button>
+      <br> <br>
+    
+     </form>
+
+     <!--
+ //  <form class="login-form">
+    <div>
+      <label for="email-login">email:</label>
+      <input type="text" id="email-login" />
+    </div>
+    <div>
+      <label for="password-login">password:</label>
+      <input type="password" id="password-login" />
+    </div>
+    <div>
+      <button type="submit">login</button>
+    </div>
+  </form>
+
+
+
+     -->
+
+
+
+
+
+
+
+
+
+
+     <form class="signup-form">
+      <h1 > One Time Sign Up</h1>
+    
+        <div>
+          <label for="username-signup">Username:</label>
+          <input type="text" id="username-signup" />
+        </div>
+        <div>
+          <label for="email-signup">Email:</label>
+          <input type="text" id="email-signup" />
+        </div>
+        <div>
+          <label for="password-signup">Password:</label>
+          <input type="password" id="password-signup" />
+        </div>
+        
+        <button type="submit" class="btn">Signup</button>
+        
+    <!--  </form>  -->
+
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+ 
+ 
+<!-- From last assignment-----
+  
+  
+  // <form class="signup-form">
+    <div>
+      <label for="username-signup">username:</label>
+      <input type="text" id="username-signup" />
+    </div>
+    <div>
+      <label for="email-signup">email:</label>
+      <input type="text" id="email-signup" />
+    </div>
+    <div>
+      <label for="password-signup">password:</label>
+      <input type="password" id="password-signup" />
+    </div>
+    <div>
+      <button type="submit">signup</button>
+    </div>
+  </form>
+
+-->
+
+
+
+
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
+  <!---------------------------------------------------------------------------->
+
+  <section id="our-services">
+    <div class="flex-row">
+    <h2 class="section-title primary-border">Our A to Z Services</h2>
+    </div>
+    
+  <div class="all">  
+    
+    <article class="service">
+      <img src="./assets/images/home.jpeg" alt="Real-Estate" />
+    </article>
+   
+
+ 
+   <article class="service">
+      <img src="./assets/images/Lawyer.jpg" alt="Lawyer" />
+   </article>
+ 
+   
+   
+   <article class="service">
+        <img src="./assets/images/bank.jpg" alt="bank" />
+   </article>
+   
+  </div>
+      
+  </section>
+
+
+  <!-- "reach out" section -->
+  <section id="reach-out" class="contact">
+    <h2 class="section-title secondary-border">Reach Out</h2>
+  
+    <div class="contact-info">
+        
+      <div>
+        <h3>My Dream Home</h3>
+        <p>
+          Any questions or concerns before signing up?
+          <br />
+          Let us know and we'll be happy to talk to you!
+        </p>
+        <address>
+            Redbud Rd <br/>
+            Piscataway, NJ <br/>
+            08854<br />
+            P: 555.666.9999<br/>
+            E: <a href="mailto:info@mydreamhome.com">info@mydreamhome.com</a>
+        </address>
+      </div>      
+     
+        
+      <div class="contact-form">
+          <h3>Contact Us</h3>
+          <form>
+             <label for="contact-name">Your Name</label>
+             <input type="text" id="contact-name" placeholder="Your Name" />
+
+             <label for="contact-number">Your Contact Number</label>
+             <input type="text" id="contact-number" placeholder="Contact Number" />
+
+             <label for="contact-message">Message</label>
+             <textarea id="contact-message" placeholder="Message"></textarea>
+        
+             <button type="submit">Submit</button>
+            </form>
+      </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.5300570444183!2d-74.43924708442201!3d40.52987715667386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c791963b2cc7%3A0x1d503dbfe1326c08!2sRedbud%20Rd%2C%20Piscataway%2C%20NJ%2008854!5e0!3m2!1sen!2sus!4v1631937344688!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    
+    </div>
+
+  </section>
+
+
+  <!-- footer -->
+  <footer>
+    <div>
+        <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
+        &copy; 2021 My Dream Home, Inc.
+      </div>
+  </footer>
+
+</body>
+
+</html>
+
