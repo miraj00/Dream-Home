@@ -2,73 +2,57 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dream Home</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
 
 <body>
-  <!-- navigation -->
+
+  {{!-- header  --}}
   <header>
     <h1> <a href="/">Dream Home</a> </h1>
     <nav>
-      <!-- Unordered list element--> 
-       <ul> 
-         <!-- List item element-->
+      <ul> 
+      {{#if loggedIn}}
+
          <li> <a href="./index.html#home">Home</a> </li>
+         <li> <a href="/dashboard">Dashboard</a> </li> 
+         
+         <li> <a href="/survey/index.html" target="_blank" >Feedback</a> </li>
+         <li> <a id="logout" class="btn-no-style">Logout</a> </li>
+
+      {{else}}
+         
          <li> <a href="./index.html#reach-out">Contact Us</a> </li>
-         <li>  <a class="open-button" onclick="openForm()">Login / Sign Up</a>    </li>
- <!--       <li>  <a href="./index.html#Login">Login / Sign Up</a> </li>   -->
-          
-       </ul>    
+         <li>  <a class="open-button" onclick="openForm()">Login / Sign Up</a> </li>
+
+      {{/if}} 
+      </ul>    
     </nav>
   </header>
 
-<!------------------------------------------------------------------------------->
- 
+<main>
+
+{{!-- Login Form  --}}
  <div class="form-popup" id="myForm">
-    <form action="/action_page.php" class="login-form">
-     
+   
+    <form class="login-form">
+   
       <h1>Login</h1>
   
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <label for="email-login"><b>Email</b></label>
+      <input type="text" id="email-login" placeholder="Enter Email" name="email" required>
   
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="password-login"><b>Password</b></label>
+      <input type="password" id="password-login" placeholder="Enter Password" name="psw" required>
   
       <button type="submit" class="btn">Login</button>
       <br> <br>
     
      </form>
-
-     <!--
- //  <form class="login-form">
-    <div>
-      <label for="email-login">email:</label>
-      <input type="text" id="email-login" />
-    </div>
-    <div>
-      <label for="password-login">password:</label>
-      <input type="password" id="password-login" />
-    </div>
-    <div>
-      <button type="submit">login</button>
-    </div>
-  </form>
-
-
-
-     -->
-
-
-
-
-
-
-
-
 
 
      <form class="signup-form">
@@ -89,77 +73,63 @@
         
         <button type="submit" class="btn">Signup</button>
         
-    <!--  </form>  -->
-
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
- 
- 
-<!-- From last assignment-----
+
+<script src="/javascript/login.js"></script>
+
+
+
+
+ {{!-- {{{ body }}} --}}
+
+
+    
+    <article class="service">
+     <div class="container">
+       <div class="row"> 
+      <div class="col"><img src="./assets/images/home.jpeg" alt="" /> </div>
+       
+     </div> 
+     </div>
+    </article>
   
-  
-  // <form class="signup-form">
-    <div>
-      <label for="username-signup">username:</label>
-      <input type="text" id="username-signup" />
-    </div>
-    <div>
-      <label for="email-signup">email:</label>
-      <input type="text" id="email-signup" />
-    </div>
-    <div>
-      <label for="password-signup">password:</label>
-      <input type="password" id="password-signup" />
-    </div>
-    <div>
-      <button type="submit">signup</button>
-    </div>
-  </form>
-
--->
 
 
 
 
-  <script>
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-  </script>
+ {{#if loggedIn}}
 
-  <!---------------------------------------------------------------------------->
-
-  <section id="our-services">
+ <section id="our-services">
     <div class="flex-row">
-    <h2 class="section-title primary-border">Our A to Z Services</h2>
+    <h2 class="section-title primary-border">Our A to Z Services Dashboard</h2>
     </div>
     
   <div class="all">  
     
     <article class="service">
-      <img src="./assets/images/home.jpeg" alt="Real-Estate" />
+     <a href="./home.html" target="_blank">  <img src="../assets/images/home.jpeg" alt="Real-Estate" /> </a>
     </article>
    
 
  
    <article class="service">
-      <img src="./assets/images/Lawyer.jpg" alt="Lawyer" />
+      <a href="./lawyer.html" target="_blank">  <img src="../assets/images/Lawyer.jpg" alt="Lawyer" /> </a>
    </article>
  
    
    
    <article class="service">
-        <img src="./assets/images/bank.jpg" alt="bank" />
+      <a href="./bank.html" target="_blank">  <img src="../assets/images/bank.jpg" alt="bank" /> </a>
    </article>
    
   </div>
       
   </section>
+
+  {{/if}}
+
 
 
   <!-- "reach out" section -->
@@ -202,22 +172,36 @@
       </div>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.5300570444183!2d-74.43924708442201!3d40.52987715667386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c791963b2cc7%3A0x1d503dbfe1326c08!2sRedbud%20Rd%2C%20Piscataway%2C%20NJ%2008854!5e0!3m2!1sen!2sus!4v1631937344688!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-    
+   
     </div>
 
   </section>
 
-
-  <!-- footer -->
+</main>
+    
   <footer>
     <div>
         <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
         &copy; 2021 My Dream Home, Inc.
-      </div>
+    </div>
   </footer>
 
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  
+  </script>
+  
+
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
-
