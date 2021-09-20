@@ -1,16 +1,18 @@
 async function editFormHandler(event) {
   event.preventDefault();
 
-  const title = document.querySelector('input[name="post-title"]').value.trim();
-  const post_text = document.querySelector('input[name="post-text"]').value;
+  const office_name = document.querySelector('input[name="post-title"]').value.trim();
+  const office_address = document.querySelector('input[name="post-text"]').value;
+  const contact_number = document.querySelector('input[name="post-contact"]').value;
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
   const response = await fetch(`/api/posts/${id}`, {
     method: 'PUT',
     body: JSON.stringify({
-      title,
-      post_text
+      office_name,
+      office_address,
+      contact_number
     }),
     headers: {
       'Content-Type': 'application/json'
@@ -18,7 +20,7 @@ async function editFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/dashboard/');
+    document.location.replace('/lawyer/');
   } else {
     alert(response.statusText);
   }

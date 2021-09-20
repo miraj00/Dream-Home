@@ -1,48 +1,34 @@
-{{!-- <section>
-  <h2>Add New Blog</h2>
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" style="font-size: 18pt; height: 30px; width:600px;" />
+
+   {{#if loggedIn}}
+
+ <section id="our-services">
+    <div class="flex-row">
+    <h2 class="section-title primary-border">Our A to Z Services Dashboard</h2>
     </div>
-    <div>
-      <label for="post-text">Blog</label>
-      <input id="post-text" name="post-text" style="font-size: 18pt; height: 200px; width:600px;"/>
-    </div>
-    <button type="submit" class="button">Create</button>
-  </form>
-</section> --}}
-
-
-
+    
+  <div class="all">  
+    
     <article class="service">
-     <div class="container">
-       <div class="row"> 
-      <div class="col"><img src="../public/assets/images/hero-tg.jpg" alt="Real-Estate" /> </div>
-       
-     </div> 
-     </div>
+     <a href="./home" target="_blank">  <img src="../assets/images/home.jpeg" alt="Real-Estate" /> </a>
     </article>
    
+
+ 
+   <article class="service">
+      <a href="./lawyer" target="_blank">  <img src="../assets/images/Lawyer.jpg" alt="Lawyer" /> </a>
+   </article>
+ 
    
+   
+   <article class="service">
+      <a href="./bank" target="_blank">  <img src="../assets/images/bank.jpg" alt="bank" /> </a>
+   </article>
+   
+  </div>
+      
+  </section>
+
+  {{/if}}
 
 
-{{!-- 
-{{#if posts.length}}
-<section>
-  <h2>Your Blogs</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Blog</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{else}}
-<h6 class="pb-4 has-text-centered is-italic">There are no Blogs</h6>
-{{/if}}
-
-<script src="/javascript/add-post.js"></script> --}}

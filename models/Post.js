@@ -3,30 +3,9 @@ const sequelize = require('../config/connection');
 
 
 // create our Post model
-class Post extends Model {
-  // static upvote(body, models) {
-  //   return 
-    // models.Post.create({
-    //   user_id: body.user_id,
-    //   post_id: body.post_id
-    // })
-    // .then(() => {
-    //   return Post.findOne({
-    //     where: {
-    //       id: body.post_id
-    //     },
-    //     attributes: [
-    //       'id',
-    //       'post_text',
-    //       'title',
-    //       'created_at',
-    //       ],
-    //     });
-    // });
-  }
+class Post extends Model { }
 
  
-
 // create fields/columns for Post model
 Post.init(
   {
@@ -36,14 +15,20 @@ Post.init(
       primaryKey: true,
       autoIncrement: true
     },
-    title: {
+    office_name: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    post_text: {
+    office_address: {
       type: DataTypes.TEXT,
-      allowNull: true,
+      allowNull: false,
       },
+
+    contact_number: {
+    type: DataTypes.TEXT,
+     allowNull: false,   
+      },
+
     user_id: {
       type: DataTypes.INTEGER,
       references: {

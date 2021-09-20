@@ -114,215 +114,6 @@ footer a {
     background-attachment: fixed;
     background-position: 80%;
 }
-.hero-cta {
-        width: 35%;
-        text-align: right;
-        margin: 3.5%;
-        color: #fff;
-        font-size: 18px;
-        line-height: 1.2;
-}
-.hero-cta h2 {
-  font-style: italic;
-  font-size: 55px;
-  color: #fce138;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero-form {
-    background-color: rgba(252, 225, 56, 0.8);
-    color: #024e76;
-    padding: 20px;
-    border: solid 3px #024e76;
-    width: 40%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-  }       
-.hero-form h3 {
-    margin: 0;
-    font-size: 24px;
-}
-.hero-form p {
-    margin: 5px 0 15px 0;
-  }
-.form-input {
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
-  } 
-  .form-input:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;
-  } 
-  .hero-form label {
-    margin: 0 5px;
-  }
-.hero-form button {
-    color: #fce138;
-    background-color: #024e76;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;  
-    border-radius: 10px;
-}  
-.hero-form button:hover {
-  background-color: #39a6b2;  
-}
-
-.checkbox-wrapper input, .radio-wrapper input {
-  opacity: 0;
-}
-
-.checkbox-wrapper label, .radio-wrapper label {
-  position: relative;
-  left: 10px;
-  margin: 10px;
-  line-height: 1.6;
-}
-
-.checkbox-wrapper label::before, .radio-wrapper label::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid #024e76;  
-  position: absolute;
-  top: -4px;
-  left: -30px;
-}
-
-.radio-wrapper label::before {
-  border-radius: 50%;
-}
-
-.radio-wrapper label::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #024e76;
-  position: absolute;
-  left: -29px;
-  top: -3px;
-  background-image: radial-gradient(circle, #39a6b2, #024e76);
-}
-
-.checkbox-wrapper label::after {
-  content: "";
-  height: 6px;
-  width: 14px;
-  border-left: 2px solid #024e76;
-  border-bottom: 2px solid #024e76;
-  position: absolute;
-  left: -26px;
-  top: 1px;
-  transform: rotate(-58deg);
-  background-image: radial-gradient(circle, #39a6b2, #024e76);
-}
-
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
-  content: none;
-}
-
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
-  content: "";
-}
-
-.checkbox-wrapper input:checked + label,
-.radio-wrapper input:checked + label {
-  font-weight: bold;
-}
-
-.intro p {
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-  }
-.steps { 
-    background: #fce138;
-  }
-
-
-.section-title {
-    font-size: 48px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-  }
-.primary-border {
-    border-color: #fce138;
-  }
- .secondary-border {
-    border-color: #39a6b2;
-  } 
-
-  .step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #39a6b2;
-  }
-  .step:last-child {
-    border-bottom: none;   
-  }
-
-.step h3 {
-    color: #024e76;
-    font-size: 46px;
-    flex: 1 30%;  
-  }
-.step-info {
-  flex: 2 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}  
-.step-img {
-  flex: 1 12%;
-  margin-right: 20px;
-}
-.step-img img {
-  max-width: 100%;
-}
-.step-text {
-  flex: 12;
-}
-.step-text p {
-    color: #39a6b2;
-    font-size: 18px;
-  }
-
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: #024e76;
-  } 
-
-
-
-  .trainer-bio {
-    padding: 25px;
-   
-  }
 
 .flex-row {
   display: flex;
@@ -447,27 +238,41 @@ footer a {
   background: #39a6b2;
 }
 
+.style1, .delete-post-btn {
+  width: 20%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+
+}
+
+.style2 {
+  margin: 15px 0 15px 80px;
+ 
+}
+.style3 {
+  width: 20%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-left: 100px;
+}
+a.edit-link {
+  margin: 2px 0 35px 15px;
+  }
 /* ----------Login Popup and inside form CSS--------------------------------------------- */
 
 
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
-
-/* Button used to open the contact form - fixed at the side of the page 
-.open-button {
-  
-  color:#fce138;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
- /*  background-color: #555; 
- position: fixed;
-  top: 100px;
-  right: 28px;
-  width: 280px; */
-
-
 
 /* The popup form - hidden by default */
 .form-popup {

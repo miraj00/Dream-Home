@@ -1,0 +1,38 @@
+
+<article class="style2">
+  <button class="style1"><a href="/dashboard"> &larr; Back to Dashboard</a> </button>
+  <h2>
+    Edit Lawyer Information
+  </h2>
+
+  <form class="edit-post-form">
+    <div>
+      <label for="post-title">Law Firm Name :</label> <br>
+      <input class="input" name="post-title" type="text" value="{{post.office_name}}" style="font-size: 18pt; height: 30px; width:600px;"  />
+    </div>
+    
+    <div>
+      <label for="post-content">Firm Address :</label>   <br>
+      <input id="txtbox" class="textarea" name="post-text" type="text" value="{{post.office_address}}" style="font-size: 18pt; height: 200px; width:600px;"/>
+    </div>
+
+    <div>
+      <label for="post-content">Phone number :</label> <br>
+      <input id="input" class="textarea" name="post-contact" type="text" value="{{post.contact_number}}" style="font-size: 18pt; height: 30px; width:600px;"/>
+    </div>    
+    
+    
+    <div class="is-pulled-right">
+
+     Posted on {{format_date post.created_at}}
+
+    </div>
+    <button class="style1" type="submit">Save Information</button>
+    <button type="button" class="delete-post-btn">Delete Information</button>
+  </form>
+</article>
+
+
+
+<script src="/javascript/edit-lawyer.js"></script>
+<script src="/javascript/delete-lawyer.js"></script>
