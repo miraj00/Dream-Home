@@ -1,0 +1,72 @@
+<div class="s01">
+  <form>
+    <fieldset>
+      <legend>Discover Your Future Home</legend>
+    </fieldset>
+    <div class="inner-form">
+      <div class="input-field first-wrap">
+        <input
+          id="search"
+          type="text"
+          placeholder="What are you looking for?"
+        />
+      </div>
+      <div class="input-field second-wrap">
+        <input id="location" type="text" placeholder="location" />
+      </div>
+      <div class="input-field third-wrap">
+        <button class="btn-search" type="button">Search</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+{{!-- <---!--------------------------------- data injection ------------------------------!----> --}}
+<div class="containers" id="infos">
+  <div class="row">
+    <div class="col" id="map">
+      1 of 2
+    </div>
+
+    <div class="col">
+
+      {{#each property}}
+        <div>
+          <ul>
+            <li>
+              <article>
+                <div class="card-top-img">
+                  <div>
+                    <a href={{rdc_web_url}}>
+                      <img src={{photo}} alt="house_pic" />
+                    </a>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <div class="card-header">
+                    <span class="price">{{price}}</span>
+                  </div>
+                  <div>
+                    <span class="description">
+                      Beds:{{beds}}
+                      Baths:{{baths}}
+                      sqft:{{sqft}}
+                      ></span>
+                  </div>
+                  <div>
+                    <address class="address">{{address}}</address>
+                  </div>
+                  <div class="card-footer">fake real estate</div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      {{/each}}
+
+    </div>
+  </div>
+</div>
