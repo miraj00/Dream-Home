@@ -1,5 +1,5 @@
 <div class="s01">
-  <form>
+  <form class="search-form">
     <fieldset>
       <legend>Discover Your Future Home</legend>
     </fieldset>
@@ -15,17 +15,14 @@
         <input id="location" type="text" placeholder="location" />
       </div>
       <div class="input-field third-wrap">
-        <button class="btn-search" type="button">Search</button>
+        <button class="btn-search" type="submit">Search</button>
       </div>
     </div>
   </form>
 </div>
 
-
-
-
-{{!-- <---!--------------------------------- data injection ------------------------------!----> --}}
-<div class="containers" id="infos">
+{{! <---!--------------------------------- data injection ------------------------------!----> }}
+<div class="container" id="infos">
   <div class="row">
     <div class="col" id="map">
       1 of 2
@@ -47,19 +44,22 @@
                 </div>
                 <div class="card-info">
                   <div class="card-header">
-                    <span class="price">{{price}}</span>
+                    <span class="price">Price : {{price}}</span>
                   </div>
                   <div>
                     <span class="description">
-                      Beds:{{beds}}
-                      Baths:{{baths}}
-                      sqft:{{sqft}}
-                      ></span>
+                      {{beds}}
+                      beds
+                      {{baths}}
+                      ba
+                      {{sqft}}
+                      sqft House for sale
+                    </span>
                   </div>
                   <div>
                     <address class="address">{{address}}</address>
                   </div>
-                  <div class="card-footer">fake real estate</div>
+                  <div class="card-footer">JLML Real State</div>
                 </div>
               </article>
             </li>
@@ -70,3 +70,5 @@
     </div>
   </div>
 </div>
+
+<script src="../public/javascript/house-search.js"></script>

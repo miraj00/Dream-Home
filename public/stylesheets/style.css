@@ -782,6 +782,10 @@ footer a {
      
  }
 
+ #info{
+   li
+ }
+
  .contact-info {
    display: flex;
    justify-content: space-between;
