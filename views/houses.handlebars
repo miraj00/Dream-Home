@@ -22,51 +22,54 @@
 </div>
 
 {{! <---!--------------------------------- data injection ------------------------------!----> }}
-<div class="container" id="infos">
+<div class="" id="infos">
   <div class="row">
     <div class="col" id="map">
       1 of 2
     </div>
 
-    <div class="col">
+    <div class="col" id="right-section">
+      <div class="row">
+        {{#each property}}
+          <div class="col-6">
 
-      {{#each property}}
-        <div>
-          <ul>
-            <li>
-              <article>
-                <div class="card-top-img">
-                  <div>
-                    <a href={{rdc_web_url}}>
-                      <img src={{photo}} alt="house_pic" />
-                    </a>
-                  </div>
+            <article>
+              <div class="card-top-img">
+                <div>
+                  <a href={{rdc_web_url}}>
+                    <img
+                      src={{photo}}
+                      alt="house_pic"
+                      style="width: 50%; hight: "
+                    />
+                  </a>
                 </div>
-                <div class="card-info">
-                  <div class="card-header">
-                    <span class="price">Price : {{price}}</span>
-                  </div>
-                  <div>
-                    <span class="description">
-                      {{beds}}
-                      beds
-                      {{baths}}
-                      ba
-                      {{sqft}}
-                      sqft House for sale
-                    </span>
-                  </div>
-                  <div>
-                    <address class="address">{{address}}</address>
-                  </div>
-                  <div class="card-footer">JLML Real State</div>
+              </div>
+              <div class="card-info">
+                <div class="card-header">
+                  <span class="price">Price : {{price}}</span>
                 </div>
-              </article>
-            </li>
-          </ul>
-        </div>
-      {{/each}}
+                <div>
+                  <span class="description">
+                    {{beds}}
+                    beds
+                    {{baths}}
+                    ba
+                    {{sqft}}
+                    sqft House for sale
+                  </span>
+                </div>
+                <div>
+                  <address class="address">{{address}}</address>
+                </div>
+                <div class="card-footer">JLML Real State</div>
+              </div>
+            </article>
 
+          </div>
+        {{/each}}
+
+      </div>
     </div>
   </div>
 </div>

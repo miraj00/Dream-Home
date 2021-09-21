@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection");
 const axios = require("axios");
+const { propertyType , location} = require('../public/javascript/house-search')
 
 router.get("/forsale", (req, res) => {
   const options = {
@@ -8,11 +9,11 @@ router.get("/forsale", (req, res) => {
     url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",
     params: {
       state_code: "NY",
-      city: "New York City",
+      city: `${location}`,
       offset: "0",
       limit: "20",
       sort: "relevance",
-      prop_type: "condo",
+      prop_type: `${propertyType}`,
     },
     headers: {
       "x-rapidapi-host": "realty-in-us.p.rapidapi.com",

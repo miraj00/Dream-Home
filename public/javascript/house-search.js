@@ -22,4 +22,7 @@ async function houseSearch(event) {
 }
 
 
-document.querySelector(".search-form").addEventListener('submit' , houseSearch )
+document.querySelector(".btn-search").addEventListener('click', houseSearch)
+
+
+module.exports = {propertyType , location}
