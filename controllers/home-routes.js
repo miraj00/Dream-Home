@@ -83,9 +83,8 @@ router.get('/login', (req, res) => {
 // <-!-----------------------------------------------getting house for sale route-------------------------------------------------------!----->
 
 
-router.get('/forsale', (req, res) => {
-  
-
+router.get('/forsale', (req, res) => {  
+console.log(req.body);
   const options = {
     method: "GET",
     url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",

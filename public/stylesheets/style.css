@@ -3,7 +3,8 @@
   --secondary-color: #024e76;
   --tertiary-color: #39a6b2;
 }
-/* ------------------------------------------------------------------------------------------------- */
+/* --------------------------------JLML----------------------------------------------------------------- */
+
 
 
 html {
@@ -41,6 +42,29 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
+.margin-pic{
+      margin-bottom: 50px;
+}
+
+#infos{
+  margin-top: 50px;
+  /* margin-bottom: 40px; */
+}
+
+#infos img{
+  width: 355px;
+  height: 270px;
+}
+#right-section{
+  height: 800px;
+  overflow-y: scroll; 
+}
+
+#right-section::-webkit-scrollbar{
+    display: none;
+}
+
 
 /* Grouping content
    ========================================================================== */
@@ -430,9 +454,12 @@ template {
   display: none;
 }
 
-html {
+/* html {
   height: 100%;
-}
+} */
+
+
+
 
 fieldset {
   margin: 0;
@@ -512,6 +539,18 @@ legend {
   width: 100%;
   padding: 10px 32px;
   font-size: 20px;
+}
+
+.input-field select {
+   height: 100%;
+  background: #fff;
+  border-radius: .5px;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 32px;
+  font-size: 20px;
+
 }
 
 .s01 form .inner-form .input-field input.placeholder {
@@ -612,6 +651,15 @@ legend {
     font-size: 16px;
   }
 }
+
+
+
+
+/* -------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+
+
 
 
 /* css ::shadow on picture houses from real state */
@@ -784,9 +832,6 @@ footer a {
      
  }
 
- #info{
-   li
- }
 
  .contact-info {
    display: flex;
