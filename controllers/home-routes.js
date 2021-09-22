@@ -84,7 +84,8 @@ router.get('/login', (req, res) => {
 
 
 router.get('/forsale', (req, res) => {  
-console.log(req.body);
+  console.log("hey there");
+  console.log(req.body)
   const options = {
     method: "GET",
     url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",
@@ -105,7 +106,7 @@ console.log(req.body);
     .request(options)
     .then(function (response) {
       console.log(response.data.listings[0]);
-      res.render("houses" , {property: response.data.listings})
+      res.render("houses", { property: response.data.listings });
     })
     .catch(function (error) {
       console.error(error);

@@ -1,9 +1,9 @@
 
 async function houseSearch(event) {
   event.preventDefault();
-  const city = document.querySelector("#search").value.trim();
+  const city = document.querySelector("#search").value
   const location = document.querySelector('option[value="AL"]').value;
- console.log(city + location)
+ console.log(city + " " + location)
   if (city && location) {
     const response = await fetch("/api/forsale", {
       method: "post",
@@ -11,7 +11,9 @@ async function houseSearch(event) {
         city,
         location,
       }),
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
     if (response.ok) {
@@ -26,4 +28,3 @@ async function houseSearch(event) {
 document.querySelector(".btn-search").addEventListener('click', houseSearch)
 
 
-// google api AIzaSyCgAUFGU2nhQLqbZQ5wcnDw1zvQkJqyK0s
