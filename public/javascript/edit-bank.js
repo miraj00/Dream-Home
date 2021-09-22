@@ -1,12 +1,14 @@
-async function newFormHandler(event) {
+async function editFormHandler(event) {
     event.preventDefault();
   
-    const office_name = document.querySelector('input[name="post-title"]').value;
+    const office_name = document.querySelector('input[name="post-title"]').value.trim();
     const office_address = document.querySelector('input[name="post-text"]').value;
     const contact_number = document.querySelector('input[name="post-contact"]').value;
-  
-    const response = await fetch('/api/bank-routes', {
-      method: 'POST',
+    const id = window.location.toString().split('/')[
+      window.location.toString().split('/').length - 1
+    ];
+    const response = await fetch(`/api/posts/${id}`, {
+      method: 'PUT',
       body: JSON.stringify({
         office_name,
         office_address,
@@ -18,10 +20,10 @@ async function newFormHandler(event) {
     });
   
     if (response.ok) {
-      console.log("successful");
+      document.location.replace('/bank/');
     } else {
       alert(response.statusText);
     }
   }
   
-  document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+  document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
