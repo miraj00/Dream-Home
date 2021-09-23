@@ -40,7 +40,7 @@ router.get('/', withAuth, (req, res) => {
 
 
 
-router.get('/lawyer/edit/:id', withAuth, (req, res) => {
+router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
       'id',

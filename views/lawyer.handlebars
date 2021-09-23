@@ -1,3 +1,4 @@
+{{!-- 
 <section>
   <h2>Add New Lawyer</h2>
 
@@ -20,8 +21,7 @@
     <br>
     <button type="submit" class="style3">Create</button>
   </form>
-</section>
-
+</section> --}}
 
 
 
@@ -36,8 +36,11 @@
    
       {{> lawyer-info post}}
    
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Lawyer Information</a>
+    
+    
+      <a href="/lawyer/edit/{{post.id}}" class="edit-link">Edit Lawyer Information</a>
       <br>
+
     </li>
     {{/each}}
   </ol>
