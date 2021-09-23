@@ -28,6 +28,7 @@
     "express-session": "^1.17.2",
     "mysql2": "^2.3.0",
     "nodemon": "^2.0.12",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "unrest": "^2.3.2"
   }
 }
