@@ -1,8 +1,10 @@
 
 async function houseSearch(event) {
   event.preventDefault();
-  const city = document.querySelector("#search").value
-  const location = document.querySelector('option[value="AL"]').value;
+  const city = document.querySelector("#search").value;
+  const locationElement = document.querySelector('#location');
+  const location = locationElement.options[locationElement.selectedIndex].value;
+
  console.log(city + " " + location)
   if (city && location) {
     const response = await fetch("/api/forsale", {
@@ -24,7 +26,7 @@ async function houseSearch(event) {
   }
 }
 
-
 document.querySelector(".btn-search").addEventListener('click', houseSearch)
 
 
+// module.exports = { city, location };

@@ -81,17 +81,15 @@ router.get('/login', (req, res) => {
 
 
 // <-!-----------------------------------------------getting house for sale route-------------------------------------------------------!----->
-
-
-router.get('/forsale', (req, res) => {  
-  console.log("hey there");
-  console.log(req.body)
+router.post('/api/forsale', (req, res) => {
+  console.log(req.body.city + req.body.location);
+  // console.log(req.body)
   const options = {
     method: "GET",
     url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",
     params: {
-      state_code: "NY",
-      city: "New York City",
+      state_code: req.body.location,
+      city: req.body.city,
       offset: "0",
       limit: "20",
       sort: "relevance",
@@ -111,5 +109,35 @@ router.get('/forsale', (req, res) => {
     .catch(function (error) {
       console.error(error);
     });
+})
+
+router.get('/forsale', (req, res) => {  
+  console.log("hey there");
+  // console.log(req.body)
+ /* const options = {
+    method: "GET",
+    url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",
+    params: {
+      state_code: "NY",
+      city: "New York City",
+      offset: "0",
+      limit: "20",
+      sort: "relevance",
+    },
+    headers: {
+      "x-rapidapi-host": "realty-in-us.p.rapidapi.com",
+      "x-rapidapi-key": "46c4c85120mshb128887db4ffa70p145b34jsn9d69bb1b5a1f",
+    },
+  };*/
+
+  // axios
+  //   .request(options)
+  //   .then(function (response) {
+  //     console.log(response.data.listings[0]);
+      res.render("houses", { property:[ response.data.listings] });
+    // })
+    // .catch(function (error) {
+    //   console.error(error);
+    // });
 })
 module.exports = router;
