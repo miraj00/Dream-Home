@@ -83,7 +83,6 @@ router.get('/login', (req, res) => {
 // <-!-----------------------------------------------getting house for sale route-------------------------------------------------------!----->
 router.post('/api/forsale', (req, res) => {
   console.log(req.body.city + req.body.location);
-  // console.log(req.body)
   const options = {
     method: "GET",
     url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",
@@ -130,7 +129,7 @@ router.get('/forsale', (req, res) => {
     },
   };*/
 
-  // axios
+  axios
   //   .request(options)
   //   .then(function (response) {
   //     console.log(response.data.listings[0]);
