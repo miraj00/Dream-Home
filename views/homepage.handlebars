@@ -2,10 +2,44 @@
     <article class="service">
      <div class="container">
        <div class="row"> 
-      <div class="col"><img src="./assets/images/home.jpeg" alt="" /> </div>
-       
-     </div> 
+         <div class="col">
+        
+        {{!-- <img src="./assets/images/home.jpeg" alt="" /> </div> --}}
+
+         {{!-- <img src="./assets/images/rotate1.jpg" alt="" /> </div> --}}
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="./assets/images/rotate1.jpg" style="width:1000px; height:600px">
+  <img class="mySlides" src="./assets/images/rotate2.jpg" style="width:1000px; height:600px">
+  <img class="mySlides" src="./assets/images/rotate3.jpeg" style="width:1000px; height:600px">
+  <img class="mySlides" src="./assets/images/rotate4.jpg" style="width:1000px; height:600px">
+  <img class="mySlides" src="./assets/images/rotate5.jpg" style="width:1000px; height:600px">
+  <img class="mySlides" src="./assets/images/rotate6.jpg" style="width:1000px; height:600px">
+</div>
+
+
      </div>
-    </article>
-  
+    </div> 
+  </div>
+</article>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
 
