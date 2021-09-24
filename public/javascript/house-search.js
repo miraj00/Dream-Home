@@ -1,7 +1,7 @@
 async function houseSearch(event) {
   event.preventDefault();
-  const city = document.querySelector("#search").value;
-  const locationElement = document.querySelector("#location");
+  const city = $("#search").value.toUpperCase();
+  const locationElement = $("#location");
   const location = locationElement.options[locationElement.selectedIndex].value;
 
   console.log(city + " " + location);
@@ -55,11 +55,11 @@ async function houseSearch(event) {
                 </div>`);
       });
       // console.log("success");
-    } else {
-      alert(response.statusText);
     }
+  } else {
+    alert(response.statusText);
   }
 }
 
-document.querySelector(".btn-search").addEventListener("click", houseSearch);
+$(".btn-search").on("click", houseSearch);
 

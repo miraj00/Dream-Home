@@ -80,7 +80,7 @@ router.get('/login', (req, res) => {
 
 
 
-// <-!-----------------------------------------------getting house for sale route-------------------------------------------------------!----->
+// <-!-----------------------------------------------api call to get all houses for sale to rapid api route-------------------------------------------------------!----->
 router.post('/api/forsale', (req, res) => {
   console.log(req.body.city)
   const options = {
@@ -103,7 +103,7 @@ router.post('/api/forsale', (req, res) => {
  axios
    .request(options)
    .then(function (response) {
-     console.log(response.data);
+     console.log(response.data.listings[0]);;
    })
    .catch(function (error) {
      console.error(error);
@@ -117,8 +117,8 @@ router.get('/forsale', (req, res) => {
     method: "GET",
     url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",
     params: {
-      state_code: "NY",
-      city: "New York City",
+      state_code: "NJ",
+      city: "paramus",
       offset: "0",
       limit: "20",
       sort: "relevance",

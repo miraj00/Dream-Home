@@ -30,7 +30,7 @@
     "express-session": "^1.17.2",
     "jquery": "^3.6.0",
     "mysql2": "^2.3.0",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.13",
     "query-selector": "^2.0.0",
     "sequelize": "^6.6.5"
   }
