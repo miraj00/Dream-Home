@@ -16,7 +16,7 @@ ReachOut.init(
             allowNull: false
         },
         your_contact_number: {
-            type: DataTypes.TEXT,
+            type: DataTypes.INTEGER,  // should it be a number?
             allowNull: false,
         },
         your_message: {
@@ -28,7 +28,7 @@ ReachOut.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'reach-out'
+        modelName: 'reach_out'
     }
 );
 

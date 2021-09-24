@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
       'office_address',
       'office_name',
       'created_at',
-     ],
+    ],
     include: [
       {
         model: User,
@@ -24,7 +24,8 @@ router.get('/', (req, res) => {
 
       res.render('homepage', {
         posts,
-        loggedIn: req.session.loggedIn
+        loggedIn: req.session.loggedIn, 
+        showContactForm: true
       });
     })
     .catch(err => {
@@ -44,9 +45,9 @@ router.get('/', (req, res) => {
       'office_address',
       'office_name',
       'created_at',
-     ],
+    ],
     include: [
-        {
+      {
         model: User,
         attributes: ['username']
       }
@@ -57,7 +58,8 @@ router.get('/', (req, res) => {
 
       res.render('homepage', {
         posts,
-        loggedIn: req.session.loggedIn
+        loggedIn: req.session.loggedIn, 
+        showContactForm: true
       });
     })
     .catch(err => {
@@ -74,6 +76,10 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/message-received', (req, res) => {
+  res.render('confirmationReceived');
 });
 
 module.exports = router;

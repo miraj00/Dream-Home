@@ -5,8 +5,8 @@ const { ReachOut, User } = require('../models/');
 router.post('/', (req, res) => {
     ReachOut.create({
         your_name: req.body.your_name,
-        Your_contact_number: req.body.Your_contact_number,
-        your_name: req.body.your_name
+        your_contact_number: req.body.your_contact_number,
+        your_message: req.body.your_message
     })
     .then(userMessage => res.json(userMessage))
     .catch(err => {
