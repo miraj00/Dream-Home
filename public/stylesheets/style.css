@@ -118,6 +118,11 @@ footer a {
 .flex-row {
   display: flex;
 }
+
+
+
+
+
  /* ------------------------------------------------- */
 .all {
   width: 100%;
@@ -237,6 +242,24 @@ footer a {
   color: #fce138;
   background: #39a6b2;
 }
+
+.section-title {
+  font-size: 48px;
+  color: #024e76;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+.primary-border {
+  border-color: #fce138;
+}
+.secondary-border {
+  border-color: #39a6b2;
+} 
+
+
 
 .style1, .delete-post-btn {
   width: 20%;
