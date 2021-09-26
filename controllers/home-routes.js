@@ -3,10 +3,6 @@ const router = require("express").Router();
 const sequelize = require("../config/connection");
 const axios = require("axios");
 const { Post, User } = require("../models");
-const router = require('express').Router();
-const sequelize = require('../config/connection');
-const axios = require('axios');
-const { Post, User } = require('../models');
 
 // get all posts for homepage
 router.get("/", (req, res) => {
