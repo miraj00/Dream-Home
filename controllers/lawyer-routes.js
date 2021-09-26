@@ -1,12 +1,12 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User } = require('../models');
-const withAuth = require('../utils/auth');
+const { withAuth, isadmin } = require('../utils/auth');
 
 
 
-
-router.get('/', withAuth, (req, res) => {
+// router.get('/', isadmin, (req, res) => {
+ router.get('/', withAuth, (req, res) => {
 //  res.json({test: "message"});
  console.log(req.session);
  console.log('======================');
@@ -39,8 +39,8 @@ router.get('/', withAuth, (req, res) => {
 });
 
 
-
-router.get('/lawyer/edit/:id', withAuth, (req, res) => {
+// router.get('/edit/:id', isadmin, (req, res) => {
+ router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
       'id',

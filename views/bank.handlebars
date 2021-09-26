@@ -1,15 +1,14 @@
-{{!-- 
 <section>
-  <h2>Add New Lawyer</h2>
+  <h2>Add New Bank</h2>
 
   <form class="new-post-form">
     <div>
-      <label for="post-title">Firm Name : </label> <br>
+      <label for="post-title">Bank Name : </label> <br>
       <input type="text" id="post-title" name="post-title" style="font-size: 18pt; height: 30px; width:600px;" />
     </div>
  
     <div>
-      <label for="post-text">Firm Address :</label> <br>
+      <label for="post-text">Bank Address :</label> <br>
       <input id="post-text" name="post-text" style="font-size: 18pt; height: 200px; width:600px;"/>
     </div>
     
@@ -22,32 +21,26 @@
     <button type="submit" class="style3">Create</button>
   </form>
 </section>
- --}}
-
-
 
 {{#if posts.length}}
 <section>
-  <h2>List of Lawyers</h2>
+  <h2>List of Banks</h2>
   <ol>
    
     {{#each posts as |post|}}
       
     <li>
    
-      {{> lawyer-info post}}
+      {{> bank-info post}}
    
-    
-    
-      <a href="/lawyer/edit/{{post.id}}" class="edit-link">Edit Lawyer Information</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Bank Information</a>
       <br>
-
     </li>
     {{/each}}
   </ol>
 </section>
 {{else}}
-<h6 class="pb-4 has-text-centered is-italic">There are no Lawyers in the list yet</h6>
+<h6 class="pb-4 has-text-centered is-italic">There are no Banks in the list yet</h6>
 {{/if}}
 
-<script src="/javascript/add-lawyer.js"></script>
+<script src="/javascript/bank-find.js"></script>

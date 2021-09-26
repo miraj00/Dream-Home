@@ -1,7 +1,12 @@
+
 const router = require("express").Router();
 const sequelize = require("../config/connection");
 const axios = require("axios");
 const { Post, User } = require("../models");
+const router = require('express').Router();
+const sequelize = require('../config/connection');
+const axios = require('axios');
+const { Post, User } = require('../models');
 
 // get all posts for homepage
 router.get("/", (req, res) => {
@@ -64,6 +69,7 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+
 // <-!-----------------------------------------------api call to get all houses for sale to rapid api route-------------------------------------------------------!----->
 router.post("/api/forsale", (req, res) => {
 
@@ -121,4 +127,7 @@ router.get("/forsale", (req, res) => {
       console.error(error);
     });
 });
+
+
+
 module.exports = router;
