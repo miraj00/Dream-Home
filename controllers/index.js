@@ -8,8 +8,10 @@ const bankRoutes = require('./bank-routes');
 
 
 router.use('/', homeRoutes);
+
 router.use('/dashboard', dashboardRoutes);
 router.use('/api', apiRoutes);
+
 router.use('/lawyer', lawyerRoutes);
 router.use('/bank', bankRoutes);
 

@@ -6,4 +6,13 @@ const withAuth = (req, res, next) => {
   }
 };
 
-module.exports = withAuth;
+const isadmin = (req, res, next) => {
+  if (!req.session.admin) {
+    res.redirect('/lawyer');
+  } else {
+    next();
+  }
+};
+
+
+module.exports = { withAuth, isadmin }

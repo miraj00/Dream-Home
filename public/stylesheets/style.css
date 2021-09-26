@@ -8,6 +8,12 @@ img:hover  {
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 1);
 }
 
+a:not([href]):not([tabindex]) {
+  color: #fce138;
+  text-decoration: none;
+}
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -77,6 +83,18 @@ header nav ul li a {
     text-shadow: none;
   }
 
+
+.mySlides {
+  width:2000px; 
+  height:800px;
+}
+
+
+a.open-button {
+  color: #fce138;
+
+}
+
   footer {
     background: #fce138;
     width: 100%;
@@ -118,6 +136,11 @@ footer a {
 .flex-row {
   display: flex;
 }
+
+
+
+
+
  /* ------------------------------------------------- */
 .all {
   width: 100%;
@@ -188,6 +211,7 @@ footer a {
     color: white;
      }  
  
+
  .contact-info h3 {
      color: #fce138;
      font-size: 32px;
@@ -198,9 +222,7 @@ footer a {
     font-size: 16px;
     font-style: normal;
   }
-  a.open-button {
-    color: #fce138;
-  }
+
   .contact-info a {
     color: #fce138;
   }
@@ -238,6 +260,24 @@ footer a {
   background: #39a6b2;
 }
 
+.section-title {
+  font-size: 48px;
+  color: #024e76;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+.primary-border {
+  border-color: #fce138;
+}
+.secondary-border {
+  border-color: #39a6b2;
+} 
+
+
+
 .style1, .delete-post-btn {
   width: 20%;
   border: none;
@@ -268,6 +308,10 @@ footer a {
 a.edit-link {
   margin: 2px 0 35px 15px;
   }
+
+
+
+
 /* ----------Login Popup and inside form CSS--------------------------------------------- */
 
 
@@ -386,6 +430,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 }
 
+
+
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     section {
@@ -413,6 +459,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       flex: 100%;  
     }
 }
+
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
@@ -444,7 +491,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
     order: 3;
   }
 
+
+
+.mySlides {
+  width:500px; 
+  height:250px;
 }
 
-
-
+}
