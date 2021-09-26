@@ -7,8 +7,6 @@
   <title>Dream Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -39,7 +37,15 @@
 <main>
 
 {{!-- Login Form  --}}
+
+
  <div class="form-popup" id="myForm">
+
+
+ <div class="container">
+        <div class="row">
+           <div class="col-6"> 
+
    
     <form class="login-form">
    
@@ -55,7 +61,9 @@
       <br> <br>
     
      </form>
+</div>
 
+<div class="col-6"> 
 
      <form class="signup-form">
       <h1 > One Time Sign Up</h1>
@@ -78,6 +86,13 @@
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
+
+
+    </div>
+  </div> 
+</div>
+ 
+
 
 <script src="/javascript/login.js"></script>
 

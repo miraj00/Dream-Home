@@ -5,7 +5,7 @@ async function newFormHandler(event) {
     const office_address = document.querySelector('input[name="post-text"]').value;
     const contact_number = document.querySelector('input[name="post-contact"]').value;
   
-    const response = await fetch('/api/bank-routes', {
+    const response = await fetch('/api/posts', {
       method: 'POST',
       body: JSON.stringify({
         office_name,
@@ -18,7 +18,7 @@ async function newFormHandler(event) {
     });
   
     if (response.ok) {
-      console.log("successful");
+      document.location.replace('/bank');
     } else {
       alert(response.statusText);
     }

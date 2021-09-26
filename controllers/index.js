@@ -5,7 +5,6 @@ const homeRoutes = require('./home-routes.js');
 const dashboardRoutes = require('./dashboard-routes.js');
 const lawyerRoutes = require('./lawyer-routes.js');
 const bankRoutes = require('./bank-routes');
-const dashbankRoutes = require('./dashbank-routes');
 
 
 router.use('/', homeRoutes);
@@ -13,6 +12,5 @@ router.use('/dashboard', dashboardRoutes);
 router.use('/api', apiRoutes);
 router.use('/lawyer', lawyerRoutes);
 router.use('/bank', bankRoutes);
-router.use('/dashbank', dashbankRoutes);
 
 module.exports = router;

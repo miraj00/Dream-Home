@@ -4,7 +4,6 @@ const { Post, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 
-//get  banks
 router.get('/', withAuth, (req, res) => {
   //  res.json({test: "message"});
    console.log(req.session);
@@ -71,20 +70,4 @@ router.get('/', withAuth, (req, res) => {
   });
 
   // Get all bank API
-  router.get("/bank-routes", (req, res) => {
-  const settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://community-worldbank.p.rapidapi.com/datacatalog?format=json",
-    "method": "GET",
-    "headers": {
-      "x-rapidapi-host": "community-worldbank.p.rapidapi.com",
-     "x-rapidapi-key": "7bed7814b1msh7590e278819b7e1p19d6d8jsndd2590b33c1c",
-   }
-  }
-  
-  $.ajax(settings).done(function (response) {
-    console.log(response);
-  });
-});
   module.exports =router;
