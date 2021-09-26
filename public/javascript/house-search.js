@@ -1,10 +1,9 @@
 async function houseSearch(event) {
   event.preventDefault();
-  const city = $("#search").value.toUpperCase();
-  const locationElement = $("#location");
+  const city = document.querySelector("#search").value.toUpperCase();
+  const locationElement = document.querySelector("#location");
   const location = locationElement.options[locationElement.selectedIndex].value;
 
-  console.log(city + " " + location);
   if (city && location) {
     const response = await fetch("/api/forsale", {
       method: "post",
@@ -16,12 +15,13 @@ async function houseSearch(event) {
         "Content-Type": "application/json",
       },
     });
+     
+    // turns raw data into JSON data 
+    const data = await response.json();
 
-    if (response.ok) {
-      console.log(response);
-      $(".house-data").empty();
-      response.data.listings.forEach((house) => {
-        $(".house-data").append(`<div class="col-6 margin-pic">
+    $(".house-data").empty();
+    data.listings.forEach((house) => {
+      $(".house-data").append(`<div class="col-6 margin-pic">
         
         <article>
         <div class="card-top-img">
@@ -53,13 +53,8 @@ async function houseSearch(event) {
                 </article>
                 
                 </div>`);
-      });
-      // console.log("success");
-    }
-  } else {
-    alert(response.statusText);
+    });
   }
 }
 
 $(".btn-search").on("click", houseSearch);
-
