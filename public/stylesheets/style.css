@@ -10,14 +10,14 @@ img:hover  {
 
 main div h1 { 
   color: #2aa2a7;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 10px;
   padding: 50px;
 
 }
 
 #response {
-  border-radius: 10px;
+  padding: 10%;
 }
 
 * {
