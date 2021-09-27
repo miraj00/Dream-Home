@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Post,  } = require('../../models');
+const { User, Prop } = require('../../models');
 
 // get all users
 router.get('/', (req, res) => {
@@ -21,14 +21,14 @@ router.get('/:id', (req, res) => {
     },
     include: [
       {
-        model: Post,
-        attributes: ['id', 'office_name', 'office_address', 'contact_number', 'created_at']
+        model: Prop,
+        attributes: ['id', 'branch_name', 'branch_address', 'contact_number', 'created_at']
       },
       // {
       //   model: Comment,
       //   attributes: ['id', 'comment_text', 'created_at'],
       //   include: {
-      //     model: Post,
+      //     model: Prop,
       //     attributes: ['title']
       //   }
       // },
@@ -47,7 +47,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/', (req, res) => {
+router.prop('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({
     username: req.body.username,
@@ -69,7 +69,7 @@ router.post('/', (req, res) => {
     });
 });
 
-router.post('/login', (req, res) => {
+router.prop('/login', (req, res) => {
   // expects {email: 'lernantino@gmail.com', password: 'password1234'}
   User.findOne({
     where: {
@@ -92,13 +92,13 @@ router.post('/login', (req, res) => {
       req.session.user_id = dbUserData.id;
       req.session.username = dbUserData.username;
       req.session.loggedIn = true;
-  
+      req.session.admin = dbUserData.admin; 
       res.json({ user: dbUserData, message: 'You are now logged in!' });
     });
   });
 });
 
-router.post('/logout', (req, res) => {
+router.prop('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();

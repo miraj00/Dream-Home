@@ -1,20 +1,21 @@
+
 <section>
   <h2>Add New Bank</h2>
 
-  <form class="new-post-form">
+  <form class="new-prop-form">
     <div>
-      <label for="post-title">Bank Name : </label> <br>
-      <input type="text" id="post-title" name="post-title" style="font-size: 18pt; height: 30px; width:600px;" />
+      <label for="prop-title">Bank Name : </label> <br>
+      <input type="text" id="prop-title" name="prop-title" style="font-size: 18pt; height: 30px; width:600px;" />
     </div>
  
     <div>
-      <label for="post-text">Bank Address :</label> <br>
-      <input id="post-text" name="post-text" style="font-size: 18pt; height: 200px; width:600px;"/>
+      <label for="prop-text">Bank Address :</label> <br>
+      <input id="prop-text" name="prop-text" style="font-size: 18pt; height: 200px; width:600px;"/>
     </div>
     
     <div>
-      <label for="post-contact">Contact Number : </label> <br>
-      <input id="post-contact" name="post-contact" style="font-size: 18pt; height: 30px; width:600px;"/>
+      <label for="prop-contact">Contact Number : </label> <br>
+      <input id="prop-contact" name="prop-contact" style="font-size: 18pt; height: 30px; width:600px;"/>
     </div>
  
     <br>
@@ -22,25 +23,25 @@
   </form>
 </section>
 
-{{#if posts.length}}
+{{#if props.length}}
 <section>
   <h2>List of Banks</h2>
   <ol>
    
-    {{#each posts as |post|}}
+    {{#each props as |prop|}}
       
     <li>
    
-      {{> bank-info post}}
+      {{> bank-info prop}}
    
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Bank Information</a>
+      <a href="/dashboard/edit/{{prop.id}}" class="edit-link">Edit Bank Information</a>
       <br>
     </li>
     {{/each}}
   </ol>
 </section>
 {{else}}
-<h6 class="pb-4 has-text-centered is-italic">There are no Banks in the list yet</h6>
+<h6 class="pb-4 has-text-centered is-italic">There are no banks listed</h6>
 {{/if}}
 
 <script src="/javascript/bank-find.js"></script>

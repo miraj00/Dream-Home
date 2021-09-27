@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User } = require('../models');
+const { Prop, User,  } = require('../models');
 const withAuth = require('../utils/auth');
 
 
@@ -8,14 +8,14 @@ router.get('/', withAuth, (req, res) => {
   //  res.json({test: "message"});
    console.log(req.session);
    console.log('======================');
-   Post.findAll({
+   Prop.findAll({
      where: {
        user_id: req.session.user_id
      },
      attributes: [
        'id',
-       'office_address',
-       'office_name',
+       'branch_address',
+       'branch_name',
        'contact_number',
        'created_at',
       ],
@@ -26,9 +26,9 @@ router.get('/', withAuth, (req, res) => {
        }
      ]
    })
-     .then(dbPostData => {
-       const posts = dbPostData.map(post => post.get({ plain: true }));
-       res.render('bank', { posts, loggedIn: true });
+     .then(dbPropData => {
+       const props = dbPropData.map(prop => prop.get({ plain: true }));
+       res.render('bank', { props, loggedIn: true });
      })
      .catch(err => {
        console.log(err);
@@ -37,11 +37,11 @@ router.get('/', withAuth, (req, res) => {
   });
 
   router.get('/bank/edit/:id', withAuth, (req, res) => {
-    Post.findByPk(req.params.id, {
+    Prop.findByPk(req.params.id, {
       attributes: [
         'id',
-        'office_address',
-        'office_name',
+        'branch_address',
+        'branch_name',
         'contact_number',
         'created_at',
       ],
@@ -52,12 +52,12 @@ router.get('/', withAuth, (req, res) => {
         }
       ]
     })
-      .then(dbPostData => {
-        if (dbPostData) {
-          const post = dbPostData.get({ plain: true });
+      .then(dbPropData => {
+        if (dbPropData) {
+          const prop = dbPropData.get({ plain: true });
           
           res.render('edit-bank', {
-            post,
+            prop,
             loggedIn: true
           });
         } else {

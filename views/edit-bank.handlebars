@@ -1,37 +1,38 @@
+
 <article class="style2">
-  <button class="style1"><a href="/bank"> &larr; Back to list of Banks</a> </button>
+  <button class="style1"><a href="/dashboard"> &larr; Back to Dashboard</a> </button>
   <h2>
     Edit Bank Information
   </h2>
 
-  <form class="edit-post-form">
+  <form class="edit-prop-form">
     <div>
-      <label for="post-title">Bank Name :</label> <br>
-      <input class="input" name="post-title" type="text" value="{{post.office_name}}" style="font-size: 18pt; height: 30px; width:600px;"  />
+      <label for="prop-title">Branch Name :</label> <br>
+      <input class="input" name="prop-title" type="text" value="{{prop.branch_name}}" style="font-size: 18pt; height: 30px; width:600px;"  />
     </div>
     
     <div>
-      <label for="post-content">Bank Address :</label>   <br>
-      <input id="txtbox" class="textarea" name="post-text" type="text" value="{{post.office_address}}" style="font-size: 18pt; height: 200px; width:600px;"/>
+      <label for="prop-content">Branch Address :</label>   <br>
+      <input id="txtbox" class="textarea" name="prop-text" type="text" value="{{prop.branch_address}}" style="font-size: 18pt; height: 200px; width:600px;"/>
     </div>
 
     <div>
-      <label for="post-content">Phone number :</label> <br>
-      <input id="input" class="textarea" name="post-contact" type="text" value="{{post.contact_number}}" style="font-size: 18pt; height: 30px; width:600px;"/>
+      <label for="prop-content">Phone number :</label> <br>
+      <input id="input" class="textarea" name="prop-contact" type="text" value="{{post.contact_number}}" style="font-size: 18pt; height: 30px; width:600px;"/>
     </div>    
     
     
     <div class="is-pulled-right">
 
-     Posted on {{format_date post.created_at}}
+     Posted on {{format_date prop.created_at}}
 
     </div>
     <button class="style1" type="submit">Save Information</button>
-    <button type="button" class="delete-post-btn">Delete Information</button>
+    <button type="button" class="delete-prop-btn">Delete Information</button>
   </form>
 </article>
 
 
-
+<script src="/javascript/bank-find.js"></script>
 <script src="/javascript/edit-bank.js"></script>
-<script src="/javascript/delete-banks.js"></script>
+<script src="/javascript/delete-bank.js"></script>
