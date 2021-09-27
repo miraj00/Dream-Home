@@ -1,36 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Survey</title>
-</head>
-
-<body>
-  <div id="starting-page">
-    <h1 id="main"> Your responses are completely anonymous, and every answer you give will help make our community
-      stronger. </h1>
-    <h2 id="instruction"> Our short survey takes about 2 minutes! </h2>
-    <div>
-      <center><div>Survey ends in <span id="time">02:00</span> minutes!</div></center>
-    </div>
-    <center><button id="btn-start">Take the Survey</button></center>
-  </div>
-
-  <!-- <center><div>Survey ends in <span id="time">02:00</span> minutes!</div></center> -->
-
-  <div id="question"></div>
-
-  <ul id="option-list"></ul>
-
-  <div id="question-result"></div>
-
-  <section id="score-page"></section>
-
-
-  <script src="./script.js"></script>
-
-</body>
-
+    <head>
+        <title>Feedback survey</title><meta name="viewport" content="width=device-width"/>
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://unpkg.com/survey-jquery@1.8.68/survey.jquery.min.js"></script>
+        <link href="https://unpkg.com/survey-core@1.8.68/modern.min.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./index.css"></head>
+    <body>
+        <div id="surveyElement" style="display:inline-block;width:100%;"></div>
+        <div id="surveyResult"></div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
 </html>
