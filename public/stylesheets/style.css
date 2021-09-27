@@ -49,6 +49,7 @@ h1 {
 
 #infos{
   margin-top: 50px;
+  display: none;
   /* margin-bottom: 40px; */
 }
 

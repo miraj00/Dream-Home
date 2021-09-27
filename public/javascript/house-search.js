@@ -57,4 +57,15 @@ async function houseSearch(event) {
   }
 }
 
-$(".btn-search").on("click", houseSearch);
+// $(".btn-search").on("click", houseSearch);
+document.querySelector(".btn-search").addEventListener("click", houseSearch);
+
+
+// onclick all the info will apppear
+
+$(document).ready(function () {
+  $(".btn-search").click(function () {
+    $("#infos").show();
+  });
+});
+  

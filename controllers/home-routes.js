@@ -1,4 +1,3 @@
-
 const router = require("express").Router();
 const sequelize = require("../config/connection");
 const axios = require("axios");
@@ -6,7 +5,6 @@ const { Post, User } = require("../models");
 
 // get all posts for homepage
 router.get("/", (req, res) => {
- 
   Post.findAll({
     attributes: ["id", "office_address", "office_name", "created_at"],
     include: [
@@ -32,7 +30,6 @@ router.get("/", (req, res) => {
 
 // get all posts for homepage
 router.get("/", (req, res) => {
- 
   Post.findAll({
     attributes: ["id", "office_address", "office_name", "created_at"],
     include: [
@@ -65,11 +62,8 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-
 // <-!-----------------------------------------------api call to get all houses for sale to rapid api route-------------------------------------------------------!----->
 router.post("/api/forsale", (req, res) => {
-
-
   const options = {
     method: "GET",
     url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",
@@ -84,12 +78,16 @@ router.post("/api/forsale", (req, res) => {
       "x-rapidapi-host": "realty-in-us.p.rapidapi.com",
       "x-rapidapi-key": "08562a1b1dmshf82179cca44477fp10ecc8jsne681467a1cc5",
     },
+    // second api 08562a1b1dmshf82179cca44477fp10ecc8jsne681467a1cc5
   };
 
   axios
     .request(options)
     .then(function (response) {
+      console.log(response.data.listings[0]);
+
       res.send(response.data);
+        
     })
     .catch(function (error) {
       console.error(error);
@@ -97,33 +95,31 @@ router.post("/api/forsale", (req, res) => {
 });
 
 router.get("/forsale", (req, res) => {
-  
   const options = {
     method: "GET",
     url: "https://realty-in-us.p.rapidapi.com/properties/list-for-sale",
     params: {
-      state_code: "NY",
-      city: "bronx",
+      state_code: "NJ",
+      city: "paramus",
       offset: "0",
-      limit: "20",
+      limit: "30",
       sort: "relevance",
     },
     headers: {
       "x-rapidapi-host": "realty-in-us.p.rapidapi.com",
-      "x-rapidapi-key": "46c4c85120mshb128887db4ffa70p145b34jsn9d69bb1b5a1f",
+      "x-rapidapi-key": "08562a1b1dmshf82179cca44477fp10ecc8jsne681467a1cc5",
     },
   };
 
   axios
     .request(options)
     .then(function (response) {
+      console.log(response.data.listings[0]);
       res.render("houses", { property: response.data.listings });
     })
     .catch(function (error) {
       console.error(error);
     });
 });
-
-
 
 module.exports = router;
