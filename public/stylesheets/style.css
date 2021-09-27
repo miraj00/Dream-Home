@@ -670,6 +670,18 @@ img:hover  {
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 1);
 }
 
+
+main div h1 { 
+  color: #2aa2a7;
+  border-radius: 50%;
+  border: 10px;
+  padding: 50px;
+
+}
+
+#response {
+  padding: 10%;
+}
 a:not([href]):not([tabindex]) {
   color: #fce138;
   text-decoration: none;

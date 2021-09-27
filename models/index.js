@@ -1,7 +1,7 @@
 // import all models
 const Post = require('./Post');
 const User = require('./User');
-
+const ReachOut = require('./ReachOut');
 
 
 
@@ -16,5 +16,11 @@ Post.belongsTo(User, {
   onDelete: 'SET NULL'
 });
 
+// User.hasMany(ReachOut, {
+//   foreignKey: 'user_id'
+// });
 
-module.exports = { User, Post };
+
+
+
+module.exports = { User, Post, ReachOut };
