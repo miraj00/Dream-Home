@@ -6,7 +6,13 @@ const { Post, User } = require("../models");
 // get all posts for homepage
 router.get("/", (req, res) => {
   Post.findAll({
-    attributes: ["id", "office_address", "office_name", "created_at"],
+
+    attributes: [
+      'id',
+      'office_address',
+      'office_name',
+      'created_at',
+    ],
     include: [
       {
         model: User,
@@ -19,7 +25,8 @@ router.get("/", (req, res) => {
 
       res.render("homepage", {
         posts,
-        loggedIn: req.session.loggedIn,
+        loggedIn: req.session.loggedIn, 
+        showContactForm: true
       });
     })
     .catch((err) => {
@@ -31,7 +38,12 @@ router.get("/", (req, res) => {
 // get all posts for homepage
 router.get("/", (req, res) => {
   Post.findAll({
-    attributes: ["id", "office_address", "office_name", "created_at"],
+    attributes: [
+      'id',
+      'office_address',
+      'office_name',
+      'created_at',
+    ],
     include: [
       {
         model: User,
@@ -44,7 +56,8 @@ router.get("/", (req, res) => {
 
       res.render("homepage", {
         posts,
-        loggedIn: req.session.loggedIn,
+        loggedIn: req.session.loggedIn, 
+        showContactForm: true
       });
     })
     .catch((err) => {

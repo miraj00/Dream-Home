@@ -39,6 +39,40 @@ const { withAuth, isadmin } = require('../utils/auth');
 });
 
 
+// router.get('/', isadmin, (req, res) => {
+  router.get('/add-lawyer', withAuth, (req, res) => {
+    //  res.json({test: "message"});
+     console.log(req.session);
+     console.log('======================');
+     Post.findAll({
+       where: {
+         user_id: req.session.user_id
+       },
+       attributes: [
+         'id',
+         'office_address',
+         'office_name',
+         'contact_number',
+         'created_at',
+        ],
+       include: [
+         {
+           model: User,
+           attributes: ['username']
+         }
+       ]
+     })
+       .then(dbPostData => {
+         const posts = dbPostData.map(post => post.get({ plain: true }));
+         res.render('add-lawyer', { posts, loggedIn: true });
+       })
+       .catch(err => {
+         console.log(err);
+         res.status(500).json(err);
+       });
+    });
+
+
 // router.get('/edit/:id', isadmin, (req, res) => {
  router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
