@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
   <title>Dream Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,6 +19,7 @@
   <header>
     <h1> <a href="/">Dream Home</a> </h1>
     <nav>
+
       <ul>
         {{#if loggedIn}}
 
@@ -88,6 +92,70 @@
             </form>
           </div>
 
+      <ul> 
+
+{{#if loggedIn}}
+
+         <li> <a href="./index.html#home">Home</a> </li>
+         <li> <a href="/dashboard">Dashboard</a> </li> 
+         
+         <li> <a href="/survey/index.html" target="_blank" >Feedback</a> </li>
+         <li> <a id="logout" class="btn-no-style">Logout</a> </li>
+
+      {{else}}
+         
+         <li> <a href="./index.html#reach-out">Contact Us</a> </li>
+         <li>  <a class="open-button" onclick="openForm()">Login / Sign Up</a> </li>
+
+      {{/if}} 
+      </ul>    
+
+
+      
+    </nav>
+  </header>
+
+<main>
+
+{{!-- Login Form  --}}
+
+
+ <div class="form-popup" id="myForm">
+
+
+ <div class="container">
+        <div class="row">
+           <div class="col-6"> 
+
+   
+    <form class="login-form">
+   
+      <h1>Login</h1>
+  
+      <label for="email-login"><b>Email</b></label>
+      <input type="text" id="email-login" placeholder="Enter Email" name="email" required>
+  
+      <label for="password-login"><b>Password</b></label>
+      <input type="password" id="password-login" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn">Login</button>
+      <br> <br>
+    
+     </form>
+</div>
+
+<div class="col-6"> 
+
+     <form class="signup-form">
+      <h1 > One Time Sign Up</h1>
+    
+        <div>
+          <label for="username-signup">Username:</label>
+          <input type="text" id="username-signup" />
+        </div>
+        <div>
+          <label for="email-signup">Email:</label>
+          <input type="text" id="email-signup" />
 
         </div>
       </div>
@@ -113,6 +181,7 @@
       <div class="contact-info">
 
         <div>
+
           <h3>My Dream Home</h3>
           <p>
             Any questions or concerns before signing up?
@@ -130,6 +199,54 @@
 
 
         <div class="contact-form">
+          <label for="password-signup">Password:</label>
+          <input type="password" id="password-signup" />
+        </div>
+        
+        <button type="submit" class="btn">Signup</button>
+        
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+
+    </div>
+  </div> 
+</div>
+ 
+
+
+<script src="/javascript/login.js"></script>
+
+
+ {{{ body }}}
+
+
+
+  <!-- "reach out" section -->
+  <section id="reach-out" class="contact">
+    <h2 class="section-title secondary-border">Reach Out</h2>
+  
+    <div class="contact-info">
+        
+      <div>
+        <h3>My Dream Home</h3>
+        <p>
+          Any questions or concerns before signing up?
+          <br />
+          Let us know and we'll be happy to talk to you!
+        </p>
+        <address>
+            Redbud Rd <br/>
+            Piscataway, NJ <br/>
+            08854<br />
+            P: 555.666.9999<br/>
+            E: <a href="mailto:info@dreamhome.com">info@dreamhome.com</a>
+        </address>
+      </div>      
+     
+        
+      <div class="contact-form">
           <h3>Contact Us</h3>
           <form>
             <label for="contact-name">Your Name</label>
@@ -160,9 +277,13 @@
   </main>
 
   <footer>
+
     <div>
       <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
       &copy; 2021 My Dream Home, Inc.
+    <div>          
+        <a href="/privacy-policy/privacy-policy.html" target="_blank">Read Our Privacy Policy</a><br />
+        &copy; 2021 My Dream Home, Inc.
     </div>
   </footer>
 

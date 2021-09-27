@@ -23,5 +23,4 @@ Post.belongsTo(User, {
 
 
 
-
 module.exports = { User, Post, ReachOut };
