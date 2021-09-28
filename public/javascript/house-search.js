@@ -1,9 +1,27 @@
+var script = document.createElement("script");
+script.src =
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyDIFmx3hr6yEOiUD6XRbtUwCmE5SrWz3p8&callback=initMap";
+script.async = true;
+
+// Attach your callback function to the `window` object
+window.initMap = function () {
+  // JS API is loaded and available
+
+  houseSearch()
+  
+};
+
+// Append the 'script' element to 'head'
+document.head.appendChild(script);
+
+// ---------------------------------------------------------
+
 async function houseSearch(event) {
   event.preventDefault();
   const city = document.querySelector("#search").value.toUpperCase();
   const locationElement = document.querySelector("#location");
   const location = locationElement.options[locationElement.selectedIndex].value;
-
+  
   if (city && location) {
     const response = await fetch("/api/forsale", {
       method: "post",
@@ -15,12 +33,26 @@ async function houseSearch(event) {
         "Content-Type": "application/json",
       },
     });
-     
-    // turns raw data into JSON data 
+
+    // turns raw data into JSON data
     const data = await response.json();
+    
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: data.listings[0].lat, lng: data.listings[0].lon },
+      zoom: 15,
+    });
+
 
     $(".house-data").empty();
     data.listings.forEach((house) => {
+
+      new google.maps.Marker({
+        position: {lat: house.lat , lng: house.lon },
+        map,
+        title: "this is the mark",
+      })
+
+      
       $(".house-data").append(`<div class="col-6 margin-pic">
         
         <article>
@@ -60,7 +92,6 @@ async function houseSearch(event) {
 // $(".btn-search").on("click", houseSearch);
 document.querySelector(".btn-search").addEventListener("click", houseSearch);
 
-
 // onclick all the info will apppear
 
 $(document).ready(function () {
@@ -68,4 +99,3 @@ $(document).ready(function () {
     $("#infos").show();
   });
 });
-  

@@ -76,6 +76,7 @@ router.get("/login", (req, res) => {
 });
 
 // <-!-----------------------------------------------api call to get all houses for sale to rapid api route-------------------------------------------------------!----->
+
 router.post("/api/forsale", (req, res) => {
   const options = {
     method: "GET",
