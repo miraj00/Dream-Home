@@ -1,15 +1,15 @@
 async function newFormHandler(event) {
     event.preventDefault();
   
-    const office_name = document.querySelector('input[name="post-title"]').value;
-    const office_address = document.querySelector('input[name="post-text"]').value;
-    const contact_number = document.querySelector('input[name="post-contact"]').value;
+    const branch_name = document.querySelector('input[name="prop-title"]').value;
+    const branch_address = document.querySelector('input[name="prop-text"]').value;
+    const contact_number = document.querySelector('input[name="prop-contact"]').value;
   
-    const response = await fetch('/api/posts', {
+    const response = await fetch(`/api/props`, {
       method: 'POST',
       body: JSON.stringify({
-        office_name,
-        office_address,
+        branch_name,
+        branch_address,
         contact_number
       }),
       headers: {
@@ -24,4 +24,5 @@ async function newFormHandler(event) {
     }
   }
   
-  document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+  document.querySelector('.new-prop-form').addEventListener('submit', newFormHandler);
+  
