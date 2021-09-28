@@ -5,9 +5,7 @@ const { withAuth, isadmin } = require('../utils/auth');
 
 
 
-// router.get('/', isadmin, (req, res) => {
- router.get('/', withAuth, (req, res) => {
-//  res.json({test: "message"});
+router.get('/', withAuth, (req, res) => {
  console.log(req.session);
  console.log('======================');
  Post.findAll({

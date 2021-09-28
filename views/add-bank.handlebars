@@ -28,7 +28,7 @@
 
 
 
-<script src="/javascript/bank-find.js"></script>
+<script src="/javascript/add-bank.js"></script>
 
 
 
@@ -50,7 +50,7 @@
 
     <div>
       <label for="prop-content">Phone number :</label> <br>
-      <input id="input" class="textarea" name="prop-contact1" type="text" value="{{prop.contact_number}}" style="font-size: 18pt; height: 30px; width:600px;"/>
+      <input id="input" class="textarea" name="prop-contact1" type="text" value="{{prop.branch_number}}" style="font-size: 18pt; height: 30px; width:600px;"/>
     </div>    
     
     
@@ -78,11 +78,11 @@
       
     <li>
    
-      {{> Bank-info prop}}
+      {{> bank-info prop}}
    
     
     
-      <a href="/banl/edit/{{prop.id}}" class="edit-link">Edit Bank Information</a>
+      <a href="/bank/edit/{{prop.id}}" class="edit-link">Edit Bank Information</a>
       <br>
 
     </li>
@@ -95,6 +95,6 @@
 
 
 
-<script src="/javascript/bank-find.js"></script>
+{{!-- <script src="/javascript/add-bank.js"></script> --}}
 <script src="/javascript/edit-bank.js"></script>
 <script src="/javascript/delete-bank.js"></script>

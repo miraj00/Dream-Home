@@ -1,11 +1,44 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Prop, Post, User } = require('../models');
+const { Prop, User } = require('../models');
 const { withAuth, isadmin } = require('../utils/auth');
 
 
+ // get all props for dashboard bank
+ router.get('/', withAuth, (req, res) => {
+  console.log(req.session);
+  console.log('======================');
+  Prop.findAll({
+    where: {
+      user_id: req.session.user_id
+    },
+    attributes: [
+      'id',
+      'branch_address',
+      'branch_name',
+      'branch_number',
+      'created_at',
+     ],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
+  })
+    .then(dbPropData => {
+      const props = dbPropData.map(prop => prop.get({ plain: true }));
+      res.render('bank', { props, loggedIn: true });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 
-router.get('/', withAuth, (req, res) => {
+
+
+router.get('/add-bank', withAuth, (req, res) => {
   //  res.json({test: "message"});
    console.log(req.session);
    console.log('======================');
@@ -17,7 +50,7 @@ router.get('/', withAuth, (req, res) => {
        'id',
        'branch_address',
        'branch_name',
-       'contact_number',
+       'branch_number',
        'created_at',
       ],
      include: [
@@ -29,7 +62,7 @@ router.get('/', withAuth, (req, res) => {
    })
      .then(dbPropData => {
        const props = dbPropData.map(prop => prop.get({ plain: true }));
-       res.render('bank', { props, loggedIn: true });
+       res.render('add-bank', { props, loggedIn: true });
      })
      .catch(err => {
        console.log(err);
@@ -37,13 +70,17 @@ router.get('/', withAuth, (req, res) => {
      });
   });
 
-  router.get('/bank/edit/:id', withAuth, (req, res) => {
+
+
+
+
+  router.get('/edit/:id', withAuth, (req, res) => {
     Prop.findByPk(req.params.id, {
       attributes: [
         'id',
         'branch_address',
         'branch_name',
-        'contact_number',
+        'branch_number',
         'created_at',
       ],
       include: [

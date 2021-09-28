@@ -1,9 +1,9 @@
 async function editFormHandler(event) {
     event.preventDefault();
   
-    const branch_name = document.querySelector('input[name="prop-title"]').value.trim();
-    const branch_address = document.querySelector('input[name="prop-text"]').value;
-    const contact_number = document.querySelector('input[name="prop-contact"]').value;
+    const branch_name = document.querySelector('input[name="prop-title1"]').value.trim();
+    const branch_address = document.querySelector('input[name="prop-text1"]').value;
+    const branch_number = document.querySelector('input[name="prop-contact1"]').value;
     const id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
@@ -12,7 +12,7 @@ async function editFormHandler(event) {
       body: JSON.stringify({
         branch_name,
         branch_address,
-        contact_number
+        branch_number
       }),
       headers: {
         'Content-Type': 'application/json'

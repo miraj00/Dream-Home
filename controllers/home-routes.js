@@ -135,4 +135,10 @@ router.get("/forsale", (req, res) => {
     });
 });
 
+
+router.get('/message-received', (req, res) => {
+  res.render('confirmationReceived');
+});
+
+
 module.exports = router;
