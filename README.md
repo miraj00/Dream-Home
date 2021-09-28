@@ -29,7 +29,7 @@
   
 
 
-  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-miraj00--mejialaguna--juju69--walterlaw19--soaresmaria-ff1414.svg?style=flat-square)](https://github.com/mejialaguna/note-taker.git)[![Heroku App Status](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=flat)](https://note-taking-helper.herokuapp.com)
+  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-miraj00--mejialaguna--juju69--walterlaw19--soaresmaria-ff1414.svg?style=flat-square)](https://github.com/mejialaguna/note-taker.git)[![Heroku App Status](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=flat)](https://tranquil-ridge-11397.herokuapp.com/)
   [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
     
   </div>
@@ -55,7 +55,7 @@
 
   <br/>
 
-This application is designed to help any ecommerce company , with table data organization and search response.
+This application is designed to help and connect all home buyers to their dream house any where they prefer.
 
   <br/>
   <br/>
@@ -196,7 +196,7 @@ please to watch the A walkthrough video demonstrating the functionality of the a
    1. To simply use and deploy this app click on the Heroku icon.
 
   
-   <a href=""><img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"/> </a>
+   <a href="https://tranquil-ridge-11397.herokuapp.com/"><img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"/> </a>
 
   <br/>
   <br/>
