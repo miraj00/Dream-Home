@@ -45,7 +45,7 @@ async function houseSearch(event) {
     
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: data.listings[0].lat, lng: data.listings[0].lon },
-      zoom: 11,
+      zoom: 14,
     });
 
 
@@ -64,7 +64,7 @@ async function houseSearch(event) {
         <article>
         <div class="card-top-img">
                 <div>
-                <a href=$house.{house.rdc_web_url}>
+                <a href=${house.rdc_web_url}>
                 <img class="real-pic" src=${house.photo} />
                 </a>
                 </div>
@@ -86,7 +86,7 @@ async function houseSearch(event) {
                     <div>
                     <address class="address">${house.address}</address>
                     </div>
-                <div class="card-footer">JLML Real State</div>
+                    <div class="card-footer">${house.office_name}</div>
                 </div>
                 </article>
                 

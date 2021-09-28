@@ -29,7 +29,7 @@
   
 
 
-  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-miraj00--mejialaguna--juju69--walterlaw19--soaresmaria-ff1414.svg?style=flat-square)](https://github.com/mejialaguna/note-taker.git)[![Heroku App Status](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=flat)](https://tranquil-ridge-11397.herokuapp.com/)
+  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-miraj00--mejialaguna--juju69--walterlaw19--soaresmaria-ff1414.svg?style=flat-square)](https://github.com/miraj00/Dream-Home.git)[![Heroku App Status](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=flat)](https://sheltered-eyrie-12242.herokuapp.com/)
   [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
     
   </div>
@@ -41,21 +41,26 @@
   
   - [About](#about)
   - [Built With](#built-with)
-  - [Installation](#installation)
-  - [Authors & contributors](#authors--contributors)
+  - [Usage](#Usage)
+  - [Authors & contributors](#Authors--contributors)
   - [Acknowledgements](#Acknowledgements)
   - [License](#License) 
+  - [Disclaimer](#Disclaimer) 
   
   </details>  
   
   <br/>
   
-  ## About
+  ## <div>  About <img align="right" src="https://img.icons8.com/plasticine/100/000000/about.png"/></div>
+
   ---
+  
 
   <br/>
 
-This application is designed to help and connect all home buyers to their dream house any where they prefer.
+ Real estate apps are mobile applications aimed at making the process of property transactions easy. These apps are designed in a way that makes it easy for buyers, sellers, realtors, landlords, and investors to find each other quickly and conveniently.
+
+ Real estate apps consist of vast databases with hundreds of thousands, and in some cases millions, of properties listed in them. This helps buyers look for their ideal home within the comfort of their homes, cars, or even from across the country. Sellers, landlords, and property managers also benefit from these apps as they can post details of their listings on multiple channels.
 
   <br/>
   <br/>
@@ -95,8 +100,8 @@ please to watch the A walkthrough video demonstrating the functionality of the a
   <br/>
   
   
-  ## Built With
-  ---
+  # Built With
+  
 
   <br/>
 
@@ -188,54 +193,119 @@ please to watch the A walkthrough video demonstrating the functionality of the a
   <br/>
   <br/>
   
-  ##  Usage 
-  ---
+  #  Usage 
+  
 
   <br/>
   
    1. To simply use and deploy this app click on the Heroku icon.
 
   
-   <a href="https://tranquil-ridge-11397.herokuapp.com/"><img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"/> </a>
+   <a href="https://sheltered-eyrie-12242.herokuapp.com/"><img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"/> </a>
 
   <br/>
   <br/>
   
   
-  ##  Authors & contributors
-  ---
-
-  <br/>
-
-  - Miraj Patel. <a href="https://github.com/miraj00?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a>  
-
-
- - Julian Wilson.  <a href="https://github.com/juju669?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a>
-
-  - Jose Luis Mejia Laguna.  <a href="https://github.com/mejialaguna?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/> </a>
+  #  Authors & contributors
   
-   - Walter Gonzales.  <a href="https://github.com/walterlaw19?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/> </a>
 
-  - Maria Soares.  <a href="https://github.com/soaresmaria?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a>
+  <br/>
+
+
+
+   <details>
+  <summary>Jose Luis Mejia Laguna.  <a href="https://github.com/mejialaguna?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/> </a></summary>
+    <ul>
+        <li> Google map API Post & Get request && Realty in us DB Post and Get Routes.
+    </ul>  
+  
+  </details>
+
+  <br/>
+
+
+   <details>
+  <summary>Julian Wilson.  <a href="https://github.com/juju669?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a></summary>
+    <ul>
+        <li> Bank Get ,Post , Update , Delete Route Author 
+    </ul>  
+  
+  </details>
+
+  <br/>
+
+
+   <details>
+  <summary> Miraj Patel. <a href="https://github.com/miraj00?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a></summary>
+    <ul>
+        <li>  handlebars
+    </ul> 
+  
+  </details>  
+
+  <br/> 
+ 
+
+  
+
+  <details>
+  <summary>Maria Soares.  <a href="https://github.com/soaresmaria?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a></summary>
+    <ul>
+        <li> Wild Card (helped every one)
+    </ul>  
+  
+  </details> 
+
+  <br/>
+ 
+  <details>
+  <summary>Walter Gonzales.  <a href="https://github.com/walterlaw19?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/> </a></summary>
+    <ul>
+        <li> FeedBack routes
+    </ul>  
+  
+  </details>
+
+
 
   <br/>
   <br/>
 
-  ## Acknowledgements
+  # Acknowledgements
   
 
   <br/>
 
 First off , thanks for taking the time to check out my app! , contribution are what make this open-source community such an amazing place to learn , inspire and create. Any contribution you make will benefit everyone interested in using the app and are very appriciated.
 
----
+
 
   <br/>
   <br/>
   
-  ## License
-  ---
+
+  # <div align="center"> <img src="https://img.icons8.com/officel/40/000000/disclaimer.png" /> Disclaimer <img src="https://img.icons8.com/fluency/48/000000/disclaimer.png"/></div>
+  
+  </br>
+
+
+  
+  All the Pictures used in this presentation and project are downloaded from online.​ We do not claim any ownership of any digital picture. ​
+    The sole intention is to use it for learning purpose only.
+     
+ 
+   <br/>
+   <br/>
+
+  
+  # License <img src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/80/000000/external-license-school-counseling-inipagistudio-lineal-color-inipagistudio.png"/>
+  
   <br/>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+  <br>
 
 [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
