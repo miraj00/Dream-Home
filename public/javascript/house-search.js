@@ -14,10 +14,16 @@ window.initMap = function () {
 // Append the 'script' element to 'head'
 document.head.appendChild(script);
 
+
+
 // ---------------------------------------------------------
+
+
+
 
 async function houseSearch(event) {
   event.preventDefault();
+  
   const city = document.querySelector("#search").value.toUpperCase();
   const locationElement = document.querySelector("#location");
   const location = locationElement.options[locationElement.selectedIndex].value;
@@ -39,7 +45,7 @@ async function houseSearch(event) {
     
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: data.listings[0].lat, lng: data.listings[0].lon },
-      zoom: 15,
+      zoom: 11,
     });
 
 
