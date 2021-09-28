@@ -1,1 +1,245 @@
-# Dream-Home
+  <br/>
+  <br/>
+
+
+
+
+
+  
+  <div align="center">
+  
+  # Dream-Home
+
+
+  <a href="https://github.com/miraj00/Dream-Home.git"><img src="https://img.icons8.com/cute-clipart/128/000000/github.png"/></a>
+  
+  <br/>
+  <br/>
+  
+  <a href="#about"><strong>Explore the screenshots »</strong></a>
+  <br/>
+  <br/>
+  
+  </div>
+  
+  
+  
+  <div align="center">
+  <br/>
+  
+
+
+  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-miraj00--mejialaguna--juju69--walterlaw19--soaresmaria-ff1414.svg?style=flat-square)](https://github.com/mejialaguna/note-taker.git)[![Heroku App Status](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=flat)](https://note-taking-helper.herokuapp.com)
+  [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+    
+  </div>
+  
+  <br/>
+  
+  <details open="open">
+  <summary>Table of Contents</summary>
+  
+  - [About](#about)
+  - [Built With](#built-with)
+  - [Installation](#installation)
+  - [Authors & contributors](#authors--contributors)
+  - [Acknowledgements](#Acknowledgements)
+  - [License](#License) 
+  
+  </details>  
+  
+  <br/>
+  
+  ## About
+  ---
+
+  <br/>
+
+This application is designed to help any ecommerce company , with table data organization and search response.
+
+  <br/>
+  <br/>
+
+  <details>
+  <summary>Usage Screenshots and Demo</summary>
+
+  <br/> 
+  
+  <img src="public/assets/images/readme-img/img-1.png"/> 
+  <br/>
+  <br/>
+  <img src="public/assets/images/readme-img/img-2.png"/> 
+  <br/>
+  <br/>
+  <img src="public/assets/images/readme-img/img-3.png"/> 
+  <br/>
+  <br/>
+  <img src="public/assets/images/readme-img/img-4.png"/> 
+  <br/>
+  <br/>
+  <img src="public/assets/images/readme-img/img-5.png"/> 
+  <br/>
+  <br/>
+  <img src="public/assets/images/readme-img/img-6.png"/> 
+  <br/>
+  <br/>
+
+  <br>
+  <br>
+
+please to watch the A walkthrough video demonstrating the functionality of the application. <a href= "#">click here</a>
+
+  </details>
+  
+  <br/>
+  <br/>
+  
+  
+  ## Built With
+  ---
+
+  <br/>
+
+> - <a href="https://www.w3schools.com/css/">CSS</a>
+    <details>
+        <ul>
+            <li> is a programming language used primarily by Web browsers to create a dynamic and interactive experience for the user
+        </ul>
+    </details> 
+> - <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API">JavaScript</a>
+    <details>
+            <ul>
+                <li> language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. 
+            </ul>
+        </details> 
+> - <a href="https://nodejs.org/en/">Node</a>
+    <details>
+            <ul>
+                <li> Node.js is an open-source and cross-platform JavaScript runtime environment. is primarily used for non-blocking, event-driven servers, due to its single-threaded nature. It's used for traditional web sites and back-end API services, but was designed with real-time, push-based architectures in mind.
+            </ul>
+        </details> 
+> - <a href="https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm">express</a>
+        <details>
+             <ul>
+                <li> Express is to provide server-side logic for web and mobile applications, and as such it's used all over the place.
+            </ul>
+        </details>
+> - <a href="https://www.w3schools.com/js/js_es6.asp">ES6</a>
+    <details>
+             <ul>
+                <li> JavaScript ES6 brings new syntax and new awesome features to make your code more modern and more readable. It allows you to write less code and do more. ES6 introduces us to many great features like arrow functions, template strings, class destruction, Modules… and more
+            </ul>
+        </details>    
+> - <a href="https://www.npmjs.com/package/mysql2">Node SQL 2</a>
+    <details>
+             <ul>
+                <li>  it is the standard language for relational database management systems. SQL statements are used to perform tasks such as update data on a database, or retrieve data from a database.
+            </ul>
+        </details>
+> - <a href="https://sequelize.org/v3/">Sequelize</a>
+    <details>
+             <ul>
+                <li> Sequelize is a powerful library in Javascript that makes it easy to manage a SQL database. Sequelize can layer over different protocols, but here we'll use PostgreSQL. At its core, Sequelize is an Object-Relational Mapper – meaning that it maps an object syntax onto our database schemas. Sequelize uses Node.
+            </ul>
+        </details>
+> - <a href="https://www.npmjs.com/package/nodemon">Nodemon</a>
+    <details>
+             <ul>
+                <li> nodemon is a tool that helps develop node. js based applications by automatically restarting the node application when file changes in the directory are detected. nodemon does not require any additional changes to your code or method of development.
+            </ul>
+        </details>
+> - <a href="https://www.npmjs.com/package/dotenv">dotenv</a>
+    <details>
+             <ul>
+                <li> dotenv allows you to separate secrets from your source code. This is useful in a collaborative environment (e.g., work, or open source) where you may not want to share your database login credentials with other people. Instead, you can share the source code while allowing other people to create their own 
+            </ul>
+        </details>
+> - <a href="https://www.npmjs.com/package//axios">axios</a>
+    <details>
+             <ul>
+                <li> Axios is a Javascript library used to make HTTP requests from node.js or XMLHttpRequests from the browser and it supports the Promise API that is native to JS ES6. It can be used intercept HTTP requests and responses and enables client-side protection against XSRF. It also has the ability to cancel requests. 
+            </ul>
+        </details>
+> - <a href="https://www.npmjs.com/package/express-session">Handlebars</a>
+    <details>
+             <ul>
+                <li> Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions.
+            </ul>
+        </details>
+> - <a href="https://www.npmjs.com/package/bcrypt">bcrypt</a>
+    <details>
+             <ul>
+                <li> Yhe bcrypt hashing function allows us to build a password security platform that scales with computation power and always hashes every password with a salt.
+            </ul>
+        </details>
+> - <a href="https://www.npmjs.com/package/connect-session-sequelize">connect-session-sequelize</a>
+    <details>
+             <ul>
+                <li> A connect module based on a fork of sequelize-restful that adds a one level of associative capability to a restful API. It also lets you define which model should be exposed through this restful API.
+            </ul>
+        </details>
+> - <a href="https://www.npmjs.com/package/jest">Jest</a>
+    <details>
+             <ul>
+                <li> Jest is an open-source testing framework built on JavaScript, designed majorly to work with React and React Native based web applications. Often, unit tests are not very useful when run on the frontend of any software. This is mostly because unit tests for the front-end require extensive, time-consuming configuration.
+            </ul>
+        </details>
+
+  <br/>
+  <br/>
+  
+  ##  Usage 
+  ---
+
+  <br/>
+  
+   1. To simply use and deploy this app click on the Heroku icon.
+
+  
+   <a href=""><img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"/> </a>
+
+  <br/>
+  <br/>
+  
+  
+  ##  Authors & contributors
+  ---
+
+  <br/>
+
+  - Miraj Patel. <a href="https://github.com/miraj00?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a>  
+
+
+ - Julian Wilson.  <a href="https://github.com/juju669?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a>
+
+  - Jose Luis Mejia Laguna.  <a href="https://github.com/mejialaguna?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/> </a>
+  
+   - Walter Gonzales.  <a href="https://github.com/walterlaw19?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/> </a>
+
+  - Maria Soares.  <a href="https://github.com/soaresmaria?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a>
+
+  <br/>
+  <br/>
+
+  ## Acknowledgements
+  
+
+  <br/>
+
+First off , thanks for taking the time to check out my app! , contribution are what make this open-source community such an amazing place to learn , inspire and create. Any contribution you make will benefit everyone interested in using the app and are very appriciated.
+
+---
+
+  <br/>
+  <br/>
+  
+  ## License
+  ---
+  <br/>
+
+[![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
+  <br/>
+
+<a href="https://github.com/miraj00/Dream-Home/issues/7">For any Question and to point out a bug please click here...</a>
+
