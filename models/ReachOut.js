@@ -5,12 +5,12 @@ class ReachOut extends Model { }
 
 ReachOut.init(
     {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true
-        },
+        // id: {
+        //     type: DataTypes.INTEGER,
+        //     allowNull: false,
+        //     primaryKey: true,
+        //     autoIncrement: true
+        // },
         your_name: {
             type: DataTypes.STRING,
             allowNull: false

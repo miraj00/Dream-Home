@@ -22,7 +22,7 @@ Prop.init(
         allowNull: false,
         },
   
-      contact_number: {
+      branch_number: {
       type: DataTypes.TEXT,
        allowNull: false,   
         },

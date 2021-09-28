@@ -3,14 +3,15 @@ async function newFormHandler(event) {
   
     const branch_name = document.querySelector('input[name="prop-title"]').value;
     const branch_address = document.querySelector('input[name="prop-text"]').value;
-    const contact_number = document.querySelector('input[name="prop-contact"]').value;
+    const branch_number = document.querySelector('input[name="prop-contact"]').value;
   
-    const response = await fetch(`/api/props`, {
+  //  const response = await fetch(`/api/posts`, {
+      const response = await fetch(`/api/props`, {
       method: 'POST',
       body: JSON.stringify({
         branch_name,
         branch_address,
-        contact_number
+        branch_number
       }),
       headers: {
         'Content-Type': 'application/json'

@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
 const { Prop, User } = require('../../models');
-const withAuth = require('../../utils/auth');
+const { withAuth } = require('../../utils/auth');
 
 // get all users
 router.get('/', (req, res) => {
@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
       'id',
       'branch_address',
       'branch_name',
-      'contact_number',
+      'branch_number',
       'created_at',   
     ],
     include: [
@@ -39,7 +39,7 @@ router.get('/:id', (req, res) => {
       'id',
       'branch_address',
       'branch_name',
-      'contact_number',
+      'branch_number',
       'created_at',
       ],
     include: [
@@ -64,12 +64,12 @@ router.get('/:id', (req, res) => {
 
 
 
-router.prop('/', withAuth, (req, res) => {
+router.post('/', withAuth, (req, res) => {
   // expects {title: 'Taskmaster goes public!', prop_url: 'https://taskmaster.com/press', user_id: 1}
   Prop.create({
     branch_name: req.body.branch_name,
     branch_address: req.body.branch_address,
-    contact_number: req.body.contact_number,
+    branch_number: req.body.branch_number,
     user_id: req.session.user_id
   })
     .then(dbPropData => res.json(dbPropData))
@@ -85,7 +85,7 @@ router.put('/:id', withAuth, (req, res) => {
     {
       branch_name: req.body.branch_name,
       branch_address: req.body.branch_address,
-      contact_number: req.body.contact_number,
+      branch_number: req.body.branch_number,
     },
     {
       where: {
