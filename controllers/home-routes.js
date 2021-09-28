@@ -76,6 +76,7 @@ router.get("/login", (req, res) => {
 });
 
 // <-!-----------------------------------------------api call to get all houses for sale to rapid api route-------------------------------------------------------!----->
+
 router.post("/api/forsale", (req, res) => {
   const options = {
     method: "GET",
@@ -91,7 +92,6 @@ router.post("/api/forsale", (req, res) => {
       "x-rapidapi-host": "realty-in-us.p.rapidapi.com",
       "x-rapidapi-key": "08562a1b1dmshf82179cca44477fp10ecc8jsne681467a1cc5",
     },
-    // second api 08562a1b1dmshf82179cca44477fp10ecc8jsne681467a1cc5
   };
 
   axios

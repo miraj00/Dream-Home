@@ -75,7 +75,6 @@
   </form>
 </div>
 
-
 {{! <---!--------------------------------- data injection ------------------------------!----> }}
 <div id="infos">
   <div class="row">
@@ -83,18 +82,9 @@
 
     </div>
 
-    <script>
-      function initMap() { const myLatLng = { lat: 40.834728, lng: -74.009061 };
-      const map = new google.maps.Map(document.getElementById("map"), { zoom:
-      18, center: myLatLng, }); new google.maps.Marker({ position: myLatLng,
-      map, title: "Hello World!", }); }
+    
 
-    </script>
-
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIFmx3hr6yEOiUD6XRbtUwCmE5SrWz3p8&callback=initMap&v=weekly"
-      async
-    ></script>
+   
 
     <div class="col" id="right-section">
       <div class="row house-data">
@@ -138,7 +128,9 @@
   </div>
 </div>
 
+
+
+
+
+
 <script src="/javascript/house-search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-<link rel="stylesheet" type="text/css" src="style.css" />
-{{! <script src="/public/javascript/index.js"></script> }}
