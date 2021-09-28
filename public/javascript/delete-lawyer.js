@@ -9,7 +9,7 @@ async function deleteFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/lawyer/');
+    document.location.replace('/lawyer/add-lawyer');
   } else {
     alert(response.statusText);
   }

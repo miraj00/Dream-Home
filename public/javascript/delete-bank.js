@@ -9,7 +9,7 @@ async function deleteFormHandler(event) {
     });
   
     if (response.ok) {
-      document.location.replace('/bank/');
+      document.location.replace('/bank/add-bank');
     } else {
       alert(response.statusText);
     }
