@@ -1,0 +1,47 @@
+{{!-- 
+<section>
+  <h2>Add New Bank</h2>
+
+  <form class="new-prop-form">
+    <div>
+      <label for="prop-title">Bank Name : </label> <br>
+      <input type="text" id="prop-title" name="prop-title" style="font-size: 18pt; height: 30px; width:600px;" />
+    </div>
+ 
+    <div>
+      <label for="prop-text">Bank Address :</label> <br>
+      <input id="prop-text" name="prop-text" style="font-size: 18pt; height: 200px; width:600px;"/>
+    </div>
+    
+    <div>
+      <label for="prop-contact">Contact Number : </label> <br>
+      <input id="prop-contact" name="prop-contact" style="font-size: 18pt; height: 30px; width:600px;"/>
+    </div>
+ 
+    <br>
+    <button type="submit" class="style3">Create</button>
+  </form>
+</section> --}}
+
+{{#if props.length}}
+<section>
+  <h2>List of Banks</h2>
+  <ol>
+   
+    {{#each props as |prop|}}
+      
+    <li>
+   
+      {{> bank-info prop}}
+   
+      {{!-- <a href="/dashboard/edit/{{prop.id}}" class="edit-link">Edit Bank Information</a> --}}
+      <br>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">There are no banks listed</h6>
+{{/if}}
+
+<script src="/javascript/add-bank.js"></script>
