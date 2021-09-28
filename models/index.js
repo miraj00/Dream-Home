@@ -2,6 +2,7 @@
 const Post = require('./Post');
 const User = require('./User');
 const Prop = require('./Prop');
+const ReachOut = require('./ReachOut');
 
 
 
@@ -26,4 +27,11 @@ Prop.belongsTo(User, {
   onDelete: 'SET NULL'
 });
 
-module.exports = { User, Post, Prop};
+// User.hasMany(ReachOut, {
+//   foreignKey: 'user_id'
+// });
+
+
+
+
+module.exports = { User, Post, Prop, ReachOut };

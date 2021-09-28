@@ -3,7 +3,6 @@
   <button class="style1"><a href="/lawyer"> &larr; Back to List of Lawyers</a> </button>
 
 
-
 <section>
   <h2>Add New Lawyer</h2>
 
@@ -25,10 +24,12 @@
  
     <br>
     <button type="submit" class="style3">Create</button>
-    
   </form>
 </section>
 
+
+
+<script src="/javascript/add-lawyer.js"></script>
 
 
 
@@ -66,6 +67,33 @@
 </section>
 
 </article>
+
+
+
+{{#if posts.length}}
+<section>
+  <h2>List of Lawyers</h2>
+  <ol>
+   
+    {{#each posts as |post|}}
+      
+    <li>
+   
+      {{> lawyer-info post}}
+   
+    
+    
+      <a href="/lawyer/edit/{{post.id}}" class="edit-link">Edit Lawyer Information</a>
+      <br>
+
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">There are no Lawyers in the list yet</h6>
+{{/if}}
+
 
 
 <script src="/javascript/add-lawyer.js"></script>
