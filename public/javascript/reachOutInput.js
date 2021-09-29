@@ -28,8 +28,8 @@ async function inputReachOutHandler(event) {
 
         if (response.ok) {
            //  document.location.href = '/confirmationReceived';
-            //  document.location.href = '/message-received';
-             document.location.replace('/message-received');
+             document.location.href = '/message-received';
+            //  document.location.replace('/message-received');
         } else {
             alert(response.statusText);
         }
