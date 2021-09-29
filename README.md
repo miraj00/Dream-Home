@@ -87,6 +87,8 @@
   <br/>
   <img src="public/assets/images/readme-img/img-6.png"/> 
   <br/>
+  <br/><img src="public/assets/images/readme-img/img-7.png"/> 
+  <br/>
   <br/>
 
   <br>
@@ -303,13 +305,22 @@ First off , thanks for taking the time to check out my app! , contribution are w
   
   <br/>
 
-<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
 
   <br>
 
-[![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+ [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
-  <br/>
+ <br/>
+ <br/>
+ <br/>
 
-<a href="https://github.com/miraj00/Dream-Home/issues/7">For any Question and to point out a bug please click here...</a>
+ <div align="center">
+  <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-question-online-learning-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"/>
+<img src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/64/000000/external-bugs-summer-at-home-inipagistudio-lineal-color-inipagistudio.png"/>
+</div>
 
+<br/>
+<div align="center">
+<a href="https://github.com/miraj00/Dream-Home/issues/7" >For any Question and to point out a bug please click here...</a> 
+</div>
