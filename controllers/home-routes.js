@@ -141,9 +141,5 @@ router.get('/message-received', (req, res) => {
 });
 
 
-router.get('/all-inquiries', (req, res) => {
-  res.render('user-inquiries');
-});
-
 
 module.exports = router;
