@@ -43,7 +43,6 @@ html {
  */
 article,
 aside,
-footer,
 header,
 nav,
 section {
@@ -786,31 +785,22 @@ a.open-button {
 }
 
   footer {
-    background: #fce138;
+    background: black;
     width: 100%;
-    padding: 40px 35px;
+    padding: 5px 15px;    
+    opacity: 0.8;
+  }
+  .split{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    color: #08a6fc;
   }
-footer h2 {
-   
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-  }
-footer div {
-    
-    line-height: 1.5;
-    text-align: right;
-  }  
-footer a {
-    color: #024e76;
-  } 
 
  section {
    padding: 60px;
   } 
+
 .hero {
     background-image: url("../images/hero-gb.jpg"); 
     background-size: cover;
