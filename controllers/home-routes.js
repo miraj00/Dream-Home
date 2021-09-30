@@ -128,7 +128,10 @@ router.get("/forsale", (req, res) => {
     .request(options)
     .then(function (response) {
       console.log(response.data.listings[0]);
-      res.render("houses", { property: response.data.listings });
+      res.render("houses", {
+        property: response.data.listings,
+        loggedIn: req.session.loggedIn,
+      });
     })
     .catch(function (error) {
       console.error(error);
@@ -137,6 +140,7 @@ router.get("/forsale", (req, res) => {
 
 
 router.get('/message-received', (req, res) => {
+
   res.render('confirmationReceived');
 });
 
