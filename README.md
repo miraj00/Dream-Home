@@ -99,7 +99,7 @@
   <br>
   
 
- <a align="center" href= "https://www.awesomescreenshot.com/video/5448464?key=226c1ccf2356ce4a29794751df356d50"><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-video-notifications-justicon-lineal-color-justicon.png"/></a>
+ <a align="center" href= "https://www.awesomescreenshot.com/video/5448464?key=226c1ccf2356ce4a29794751df356d50"><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/128/000000/external-video-notifications-justicon-lineal-color-justicon.png"/></a>
 
 please to watch the A walkthrough video demonstrating the functionality of the application. <a href= "https://www.awesomescreenshot.com/video/5448464?key=226c1ccf2356ce4a29794751df356d50">click here</a>
 
