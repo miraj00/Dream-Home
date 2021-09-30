@@ -21,8 +21,8 @@ document.head.appendChild(script);
 
 
 
-async function houseSearch(event) {
-  event.preventDefault();
+async function houseSearch(e) {
+ e.preventDefault();
   
   const city = document.querySelector("#search").value.toUpperCase();
   const locationElement = document.querySelector("#location");
