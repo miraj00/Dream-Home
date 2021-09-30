@@ -5,7 +5,7 @@ console.log(x);
 
 
 //-------Style IDs -----------------------------------------------------------------------
-var quizCompleteEl = document.querySelector("#quiz-complete");
+// var quizCompleteEl = document.querySelector("#quiz-complete");
 quizCompleteEl.setAttribute("style", "text-align:center; margin: 100px auto 0 auto; padding-bottom: 20px;");
 
 var currentScoreEl = document.querySelector("#current-score");
