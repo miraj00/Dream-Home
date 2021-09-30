@@ -65,8 +65,11 @@
   <br/>
   <br/>
 
-  <details>
-  <summary>Usage Screenshots and Demo</summary>
+  <div align="center"><img src="https://img.icons8.com/fluency/48/000000/macbook-pictures.png"/></div>  
+
+  
+  <details align="center">
+     <summary>Screenshots and Demo</summary>
 
   <br/> 
   
@@ -94,11 +97,16 @@
 
   <br>
   <br>
+  
 
-please to watch the A walkthrough video demonstrating the functionality of the application. <a href= "#">click here</a>
+ <a align="center" href= "https://www.awesomescreenshot.com/video/5448464?key=226c1ccf2356ce4a29794751df356d50"><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-video-notifications-justicon-lineal-color-justicon.png"/></a>
+
+please to watch the A walkthrough video demonstrating the functionality of the application. <a href= "https://www.awesomescreenshot.com/video/5448464?key=226c1ccf2356ce4a29794751df356d50">click here</a>
 
   </details>
   
+  <br/>
+  <br/>
   <br/>
   <br/>
   
@@ -217,15 +225,21 @@ please to watch the A walkthrough video demonstrating the functionality of the a
   
   <br/>
   <br/>
-    <details>
-        <summary>Admin Use only.  </summary>
-    <ul>
-        <li> Please make sure you are logged in, to be able to make changes on the DataBase.
-        <li> To add , update or delete info for Banks options use this link. [ https://sheltered-eyrie-12242.herokuapp.com/bank/add-bank ]
-         <li> To add , update or delete info for Lawyer option use the fallowing link. [ https://sheltered-eyrie-12242.herokuapp.com/lawyer/add-lawyer]
-    </ul>  
-  
-  </details>
+
+  <div align="center">
+  <img  src="https://img.icons8.com/external-itim2101-flat-itim2101/64/000000/external-administrator-internet-of-things-itim2101-flat-itim2101.png"/>
+  </div>
+
+  <br>
+
+ <details >
+    <summary>Admin Use only.  </summary>
+        <ul>
+            <li> Please make sure you are logged in, to be able to make changes on the DataBase.
+            <li> To add , update or delete info for Banks options use this link. [ https://sheltered-eyrie-12242.herokuapp.com/bank/add-bank ]
+                <li> To add , update or delete info for Lawyer option use the fallowing link. [ https://sheltered-eyrie-12242.herokuapp.com/lawyer/add-lawyer]
+        </ul>  
+ </details>
 
   <br/>
   <br/>
@@ -242,7 +256,7 @@ please to watch the A walkthrough video demonstrating the functionality of the a
    <details>
   <summary>Jose Luis Mejia Laguna.  <a href="https://github.com/mejialaguna?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/> </a></summary>
     <ul>
-        <li> Google map API Post & Get request && Realty in us DB Post and Get Routes.
+        <li> Google map API Post & Get request && Realty in us DB Post and Get Routes , js Models and Handlebars files related to search houses portion.
     </ul>  
   
   </details>
@@ -253,7 +267,7 @@ please to watch the A walkthrough video demonstrating the functionality of the a
    <details>
   <summary>Julian Wilson.  <a href="https://github.com/juju669?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a></summary>
     <ul>
-        <li> Bank Get ,Post , Update , Delete Route Author 
+        <li> JS Bank Get ,Post , Update , Delete Route Author , Js models & Handlebars files related to Banks info portion.
     </ul>  
   
   </details>
@@ -264,7 +278,7 @@ please to watch the A walkthrough video demonstrating the functionality of the a
    <details>
   <summary> Miraj Patel. <a href="https://github.com/miraj00?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/></a></summary>
     <ul>
-        <li>  handlebars
+        <li> JS Lawyer Get ,Post , Update , Delete Route Author , Js models & Handlebars files related to the Lawyer info portion.
     </ul> 
   
   </details>  
@@ -287,7 +301,7 @@ please to watch the A walkthrough video demonstrating the functionality of the a
   <details>
   <summary>Walter Gonzales.  <a href="https://github.com/walterlaw19?tab=repositories"  ><img src="https://img.icons8.com/clouds/32/000000/github.png" align="right"/> </a></summary>
     <ul>
-        <li> FeedBack routes
+        <li> contact portion of the site routes && js Models
     </ul>  
   
   </details>
