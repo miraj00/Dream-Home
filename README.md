@@ -87,7 +87,8 @@
   <br/>
   <img src="public/assets/images/readme-img/img-6.png"/> 
   <br/>
-  <br/><img src="public/assets/images/readme-img/img-7.png"/> 
+  <br/>
+  <img src="public/assets/images/readme-img/img-7.png"/> 
   <br/>
   <br/>
 
@@ -219,6 +220,7 @@ please to watch the A walkthrough video demonstrating the functionality of the a
     <details>
         <summary>Admin Use only.  </summary>
     <ul>
+        <li> Please make sure you are logged in, to be able to make changes on the DataBase.
         <li> To add , update or delete info for Banks options use this link. [ https://sheltered-eyrie-12242.herokuapp.com/bank/add-bank ]
          <li> To add , update or delete info for Lawyer option use the fallowing link. [ https://sheltered-eyrie-12242.herokuapp.com/lawyer/add-lawyer]
     </ul>  
