@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Start Quiz</title>
-    <title>Start Quiz</title>
+<html lang="en-us">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
 
-  </head>
-  <body>
-    <div id="starting-page">
-      <h1 id="main"> Coding Quiz Challenge</h1>
-      <h2 id="instruction"> Try to answer the following Javascript related questions within the time limits <br> 
-           Incorrect answer will penalize your score/time by 5 seconds! </h2>
-      <center><button id="btn-start">Start</button></center>
-    </div>
-    <div id="timer"></div>
+        <title>Feedback survey</title><meta name="viewport" content="width=device-width"/>
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://unpkg.com/survey-jquery@1.8.68/survey.jquery.min.js"></script>
+        <link href="https://unpkg.com/survey-core@1.8.68/modern.min.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </head>
+    <body>
 
-    <div id="question"></div>
+      <!-- <div class="source-container" id="test2" style="background-color:rgb(240, 232, 232); width:2000px; height:1500px;">   -->
+        <!-- float:left -->
 
-    <ul id="option-list"></ul>
+        <div id="surveyElement" style="display:inline-block;width:100%;"></div>
+        <div id="surveyResult"></div>
 
-    <div id="question-result"></div>
-        
-    <section id="score-page"></section>
+    <!-- </div> -->
+
+        <script type="text/javascript" src="./script.js"></script>
+
+        <!-- <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
+        <input type='button' id='but_screenshot' value='Send' onclick='email();'><br/> -->
 
 
-    <script src="./script.js"></script>
 
-  </body>
+<script>
+    function screenshot() {
+        html2canvas(document.querySelector("#test2")).then(canvas => {
+            document.body.appendChild(canvas)
+        });
+    }
+
+
+    function email() {
+        Email.send({
+    // SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    Host : "smtp.gmail.com",
+    Username : "codingcamp930@gmail.com",
+    Password : "Rutgers123@",
+    SSL : 465,
+    To : 'miraj00@gmail.com',
+    From : "dreamhome.com",
+    Subject : "Customer Survey Feedback",
+    Body : "And this is the body",
+    Attachments : [
+    {
+        name : "smtpjs.png",
+        data : canvas.toDataURL(),
+        path : "data:image/png;base64,iVBORw0KGgoAAAANSUhEgDz3/Km+vQGsoVNxX="
+    }]
+}).then(
+  message => alert(message))
+  .catch( error =>  console.log(error) );
+   
+  
+      
+      };
+</script>
+</body>
 </html>
