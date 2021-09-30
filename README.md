@@ -29,12 +29,19 @@
   
 
 
-  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-miraj00--mejialaguna--juju69--walterlaw19--soaresmaria-ff1414.svg?style=flat-square)](https://github.com/miraj00/Dream-Home.git)[![Heroku App Status](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=flat)](https://afternoon-thicket-61353.herokuapp.com/)
+  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-miraj00--mejialaguna--juju69--walterlaw19--soaresmaria-ff1414.svg?style=flat-square)](https://github.com/miraj00/Dream-Home.git)
+  <br/>
+  <br/>
+
+  [![Heroku App Status](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg?style=flat)](https://afternoon-thicket-61353.herokuapp.com/)
   [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
     
   </div>
   
   <br/>
+    <br/>
+  <br/>
+
   
   <details open="open">
   <summary>Table of Contents</summary>
@@ -50,6 +57,9 @@
   </details>  
   
   <br/>
+    <br/>
+  <br/>
+
   
   ## <div>  About <img align="right" src="https://img.icons8.com/plasticine/100/000000/about.png"/></div>
 
