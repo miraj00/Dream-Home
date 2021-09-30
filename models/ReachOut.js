@@ -16,7 +16,7 @@ ReachOut.init(
             allowNull: false
         },
         your_contact_number: {
-            type: DataTypes.INTEGER,  // should it be a number?
+            type: DataTypes.TEXT,  // should it be a number?
             allowNull: false,
         },
         your_message: {
