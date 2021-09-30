@@ -199,12 +199,22 @@ please to watch the A walkthrough video demonstrating the functionality of the a
   
 
   <br/>
-  
-   1. To simply use and deploy this app click on the Heroku icon.
+    
 
-  
-   <a href="https://sheltered-eyrie-12242.herokuapp.com/"><img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"/> </a>
+   1. click on the Heroku icon to go directly into to the site.<a href="https://sheltered-eyrie-12242.herokuapp.com/" ><img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" height="45px"   align="right"/> </a>
 
+
+   2. Login or SignUp to enjoy all the benefits of the site.
+   3. click & navigate into the Dashboard.
+   4. choose any of the three categories shown (if you want to look for a house , a lawyer , or a reliable bank for you loan).
+   5. Inside search for a home , you can place the town or city and the state where you would like to start you next adventure.
+   6. Back on Dashboard we have a list of Banks and Lawyers for you to choose from.
+   7. If you enjoy this website ,please dont forget to leave a feedback to improve our services.
+   8. Log Out.
+   9. Enjoy  
+
+  <br/>
+  <br/>
   <br/>
   <br/>
   
