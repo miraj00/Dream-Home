@@ -1,6 +1,6 @@
 // ---score value from local storage ------------------------------------
 
-var x = localStorage.getItem("Score");
+// var x = localStorage.getItem("Score");
 console.log(x); 
 
 
