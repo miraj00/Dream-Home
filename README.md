@@ -213,7 +213,18 @@ please to watch the A walkthrough video demonstrating the functionality of the a
    8. Log Out.
    9. Enjoy  
 
+  
   <br/>
+  <br/>
+    <details>
+        <summary>Admin Use only.  </summary>
+    <ul>
+        <li> To add , update or delete info for Banks options use this link. [ https://sheltered-eyrie-12242.herokuapp.com/bank/add-bank ]
+         <li> To add , update or delete info for Lawyer option use the fallowing link. [ https://sheltered-eyrie-12242.herokuapp.com/lawyer/add-lawyer]
+    </ul>  
+  
+  </details>
+
   <br/>
   <br/>
   <br/>
