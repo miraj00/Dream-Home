@@ -65,7 +65,7 @@ router.get('/:id', (req, res) => {
 
 
 router.post('/', withAuth, (req, res) => {
-  // expects {title: 'Taskmaster goes public!', prop_url: 'https://taskmaster.com/press', user_id: 1}
+
   Prop.create({
     branch_name: req.body.branch_name,
     branch_address: req.body.branch_address,

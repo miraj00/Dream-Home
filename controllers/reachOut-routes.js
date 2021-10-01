@@ -15,12 +15,6 @@ router.post('/', (req, res) => {
     });
 });
 
-// router.get('/', (req, res) => {
-//     console.log('it works');
-//     User.findAll({
-
-//     })
-// })
 
 
 module.exports = router;

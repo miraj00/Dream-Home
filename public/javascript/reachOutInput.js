@@ -7,7 +7,7 @@ async function inputReachOutHandler(event) {
     
 
 
-    if (your_name) {   // is this needed??????
+    if (your_name) { 
         const response = await fetch('/reach-out', {
             
             method: 'POST',
@@ -19,7 +19,7 @@ async function inputReachOutHandler(event) {
             }),
             
             headers: {
-                'Content-Type': 'application/json'   // what's this
+                'Content-Type': 'application/json'  
             }
             
         });
@@ -27,8 +27,7 @@ async function inputReachOutHandler(event) {
         
 
         if (response.ok) {
-           //  document.location.href = '/confirmationReceived';
-            //  document.location.href = '/message-received';
+
              document.location.replace('/message-received');
         } else {
             alert(response.statusText);

@@ -8,7 +8,6 @@ const ReachOut = require('./ReachOut');
 
 
 
-// create associations
 User.hasMany(Post, {
   foreignKey: 'user_id'
 });
@@ -26,10 +25,6 @@ Prop.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
 });
-
-// User.hasMany(ReachOut, {
-//   foreignKey: 'user_id'
-// });
 
 
 

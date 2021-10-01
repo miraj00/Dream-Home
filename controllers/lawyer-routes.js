@@ -39,7 +39,7 @@ router.get('/', withAuth, (req, res) => {
 
 // router.get('/', isadmin, (req, res) => {
   router.get('/add-lawyer', withAuth, (req, res) => {
-    //  res.json({test: "message"});
+   
      console.log(req.session);
      console.log('======================');
      Post.findAll({

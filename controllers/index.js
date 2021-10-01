@@ -6,7 +6,7 @@ const dashboardRoutes = require('./dashboard-routes.js');
 const lawyerRoutes = require('./lawyer-routes.js');
 const reachOutRoutes = require('./reachOut-routes.js');
 
-// const forSaleRoute = require('./forsale-routes.js')
+
 const bankRoutes = require('./bank-routes.js');
 
 
